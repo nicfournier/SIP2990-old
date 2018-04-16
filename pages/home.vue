@@ -1,7 +1,6 @@
 <template>
 <section class="container">
     <div>
-      <app-logo/>
       <h1 class="title">
         hst2125-bv
       </h1>
@@ -21,4 +20,6 @@
     </div>
   </section>
 </template>
+
+
 

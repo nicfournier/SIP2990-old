@@ -1,24 +1,10 @@
 <template>
-<div>
-  <TopNavbar/>
-  <home/>
-</div>
+  <div>
+    <TopNavbar/>
+    <home/>
+  </div>
 </template>
 
-<style lang="scss">
-@import '../node_modules/bootstrap/scss/bootstrap.scss';
-
-.material-icons {
-  vertical-align: text-top;
-}
-.nav-tabs .nav-link {
-  border-width: 0;
-}
-.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
-  border-bottom: 1px solid $primary;
-}
-
-</style>
 
 <script>
 import TopNavbar from '~/components/TopNavbar.vue'
@@ -38,7 +24,29 @@ export default {
 }
 </script>
 
+<style lang="scss">
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+.material-icons {
+  vertical-align: text-top;
+}
+.nav-tabs .nav-link {
+  border-width: 0;
+}
+/*.nav-tabs .nav-link.active, .tabs .nav-item .nav-link.active {
+  border-bottom: 1px solid $primary;
+}*/
+.tabs .nav-link.active, .nav-tabs .nav-item .nav-link {
+  border-bottom: 1px solid $primary;
+  background: red;
+}
+</style>
+
 <!--<style lang="scss">
+
+@import './styles/custom-bootstrap.scss';
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
 .material-icons {
   vertical-align: text-top;
 }

@@ -20,10 +20,6 @@
                         Objectifs de la semaine
                     </h1>
                     <span>
-                      <b-taglist attached class="is-pulled-right">
-                          <b-tag type=" is-dark"><b-icon icon="clock" size="is-small"> </b-icon></b-tag>
-                          <b-tag type="is-light">5 heures</b-tag>
-                      </b-taglist>
                     </span>
                     <ul>
                       <li>Se familiariser avec la typologie des sources à mobiliser pour l’étude du haut Moyen Âge</li>
@@ -32,7 +28,6 @@
                       <li>Comprendre la vision du monde à l’époque médiévale</li>
                     </ul>
                   </div>
-
                 </b-tab>
 
                 <b-tab title="Contenus essentiels" icon="flag-variant">
@@ -60,41 +55,79 @@
                   </p>
                 </b-tab>
 
-                <b-tab title="Videos" icon="filmstrip">
-                  <Modal>
-                    <card>
-                      <h1 slot="header" class="title is-4">
-                        Objectifs de la semaine
-                      </h1>
-                      <b-taglist attached class="is-pulled-right">
-                        <b-tag type=" is-dark"><b-icon icon="clock" size="is-small"> </b-icon></b-tag>
-                        <b-tag type="is-light">5 heures</b-tag>
-                      </b-taglist>
-                      <ul>
-                        <li>Se familiariser avec la typologie des sources à mobiliser pour l’étude du haut Moyen Âge</li>
-                        <li>Se familiariser avec les cadres spatio-temporels</li>
-                        <li>Fixer le cadre spatio-temporel pour le projet de recherche individuel</li>
-                        <li>Comprendre la vision du monde à l’époque médiévale</li>
-                      </ul>
-                      <footer class="card-footer">
-                          <span slot="button-title" class="card-footer-item">Visionner</span>
-                          <a href="#" class="card-footer-item">Éditer</a>
-                          <a href="#" class="card-footer-item">Effacer</a>
-                      </footer>
-                    </card>
-                    <div slot="content">
-                      <iframe src="https://player.vimeo.com/video/179089952?title=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-<p><a href="https://vimeo.com/179089952">a-venir</a> from <a href="https://vimeo.com/user26937759">FAS - Formation en ligne</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+                <b-tab title="Activités" icon="filmstrip">
+                  <b-card-group deck>
+                    <!--<b-card no-body title="Visualiser les vidéos d'initiation aux cadres spatio-temporels" header="featured" header-tag="header" tag="article" class="mb-4" img-src="">
+                      <span slot="header"><h4>Activité 1 </h4><b-badge><i class="material-icons">clock</i> 5 heures</b-badge></span>
+                      <b-card-footer><b-link href="/parcours/S02/S02-activities/S02-A01" class="card-link">Détail</b-link></b-card-footer>
+                      <b-card-img src="http://lorempixel.com/g/400/200/nature"
+                        alt="Image"
+                        bottom></b-card-img>
+                    </b-card>-->
 
-                        <ul>
-                          <li>Se familiariser avec la typologie des sources à mobiliser pour l’étude du haut Moyen Âge</li>
-                          <li>Se familiariser avec les cadres spatio-temporels</li>
-                          <li>Fixer le cadre spatio-temporel pour le projet de recherche individuel</li>
-                          <li>Comprendre la vision du monde à l’époque médiévale</li>
-                        </ul>
-                    </div>
-                  </Modal>
+                    <b-card title="Visualiser les vidéos d'initiation aux cadres spatio-temporels" 
+                        header="" 
+                        header-tag="header" 
+                        tag="article" 
+                        class="mb-4" 
+                        img-src="http://lorempixel.com/g/400/200/nature"
+                        img-alt="Img"
+                        img-top>
+                      <p class="card-text">
+                        <b-badge> Activité 1</b-badge>
+                      </p>
+                      <span slot="footer">
+                        <b-link href="/parcours/S02/S02-activities/S02-A01" class="card-link">Détail</b-link>
+                      </span>
+                    </b-card>
 
+                    <b-card title="Choisir le cadre spatial" 
+                        header="" 
+                        header-tag="header" 
+                        tag="article" 
+                        class="mb-4" 
+                        img-src="http://lorempixel.com/g/400/200/nature"
+                        img-alt="Img"
+                        img-top>
+                      <p class="card-text">
+                        <b-badge> Activité 2</b-badge>
+                      </p>
+                      <span slot="footer">
+                        <b-link href="" class="card-link">Détail</b-link>
+                      </span>
+                    </b-card>
+
+                    <b-card border-variant="primary"
+                          header="Activité 3"
+                          header-bg-variant="primary"
+                          header-text-variant="white"
+                          tag="article" 
+                        class="mb-4">
+                      <h5 class="card-text">
+                        Préparer le dossier documentaire pour l'atelier hebdomadaire avec fiches de source.
+                      </h5>
+                      <span slot="footer">
+                        <b-link href="" class="card-link">Détail </b-link>
+                      </span>
+                    </b-card>
+                </b-card-group>
+
+                <b-card-group deck>
+                    <b-card title="Discussion dans les forums de groupe" header="featured" header-tag="header" tag="article" class="mb-4">
+                      <span slot="header"><h4>Activité 4 </h4><b-badge>New</b-badge></span>
+                      <span slot="footer">
+                        <b-link href="" class="card-link">Détail</b-link>
+                      </span>
+                    </b-card>
+
+                    <b-card title="Atelier hebdomadaire" header="featured" header-tag="header" tag="article" class="mb-4">
+                      <span slot="header"><h4>Activité 5 </h4><b-badge>New</b-badge></span>
+                      <span slot="footer">
+                        <b-link href="" class="card-link">Détail</b-link>
+                      </span>
+                    </b-card>
+                  </b-card-group>
+                  
                 </b-tab>
             </b-tabs> 
         </section>
@@ -155,8 +188,8 @@ export default {
   },
   data () {
     return {
-      msg: 'semaine 2',
-      isActive: true
+      msg: 'semaine 2'//,
+      //isActive: true
     }
   }
 }

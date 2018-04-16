@@ -1,3 +1,9 @@
+const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+  router: {
+    base: './'
+  }
+} : {}
+
 module.exports = {
   /*
   ** Headers of the page
@@ -26,7 +32,7 @@ module.exports = {
     // Or if you have custom bootstrap CSS...
     ['bootstrap-vue/nuxt', { css: false }],
   ],
-
+  routerBase,
   /*
   ** Build configuration
   */
@@ -34,7 +40,7 @@ module.exports = {
     /*
     ** Run ESLint on save
     */
-    extend (config, { isDev, isClient }) {
+    /*extend (config, { isDev, isClient }) {
       if (isDev && isClient) {
         config.module.rules.push({
           enforce: 'pre',
@@ -43,6 +49,19 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
+    }*/
+    extend (config, { isDev, isClient }) {
+      if (!isDev) {
+        // relative links, please.
+        config.output.publicPath = './_nuxt/'
+      }
+      return config;
     }
+  },
+  router: {
+    //base: './',
+    linkActiveClass: 'is-active'//,
+    //base: process.env.DEPLOY_ENV === 'STATIC' ? '/nuxt-example/' : '/'
+    //base: process.env.NODE_ENV === 'dev' ? '' : '/HST2125-Nuxt/'
   }
 }
