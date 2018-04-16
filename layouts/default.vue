@@ -1,8 +1,25 @@
 <template>
   <div>
+    <TopNavbar/>
     <nuxt/>
   </div>
 </template>
+
+<script>
+import TopNavbar from '~/components/TopNavbar.vue'
+
+import Vue from 'vue'
+import BootstrapVue from 'bootstrap-vue'
+
+
+Vue.use(BootstrapVue);
+
+export default {
+  components: {
+    TopNavbar
+  }
+}
+</script>
 
 <style>
 html {
