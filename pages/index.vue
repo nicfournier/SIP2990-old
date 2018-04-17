@@ -1,13 +1,11 @@
 <template>
   <div>
-    <TopNavbar/>
     <home/>
   </div>
 </template>
 
 
 <script>
-import TopNavbar from '~/components/TopNavbar.vue'
 import home from '~/pages/home.vue'
 
 import Vue from 'vue'
@@ -17,29 +15,17 @@ import BootstrapVue from 'bootstrap-vue'
 Vue.use(BootstrapVue);
 
 export default {
+  layout: 'splash',
   components: {
-    TopNavbar,
     home
   }
 }
 </script>
 
 <style lang="scss">
-@import '../node_modules/bootstrap/scss/bootstrap.scss';
 
-.material-icons {
-  vertical-align: text-top;
-}
-.nav-tabs .nav-link {
-  border-width: 0;
-}
-/*.nav-tabs .nav-link.active, .tabs .nav-item .nav-link.active {
-  border-bottom: 1px solid $primary;
-}*/
-.tabs .nav-link.active, .nav-tabs .nav-item .nav-link {
-  border-bottom: 1px solid $primary;
-  background: red;
-}
+@import '~/assets/custom-scss.scss';
+
 </style>
 
 <!--<style lang="scss">

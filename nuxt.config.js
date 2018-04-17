@@ -26,12 +26,22 @@ module.exports = {
   loading: { color: '#3B8070' },
 
   /* For Bootstrap-Vue*/ 
-  modules: [
+  /*modules: [
     'bootstrap-vue/nuxt',
 
     // Or if you have custom bootstrap CSS...
     ['bootstrap-vue/nuxt', { css: false }],
+  ],*/
+
+  css: [
+    // Load a Node.js module directly (here it's a Sass file)
+    'bootstrap-vue',
+    // CSS file in the project
+    '@/assets/custom-scss.scss'//,
+    // SCSS file in the project
+    //'@/assets/css/main.scss'
   ],
+
   routerBase,
   /*
   ** Build configuration

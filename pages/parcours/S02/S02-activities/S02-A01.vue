@@ -82,10 +82,16 @@
                 
                 <!-- Modal Component -->
                 <b-modal id="modal1" size="lg" title="Présentation - Scandinavie" centered>
-                    <iframe src="https://player.vimeo.com/video/179089952?title=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    <!--<iframe src="https://player.vimeo.com/video/179089952?title=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                     <p>
                         <a href="https://vimeo.com/179089952">a-venir</a> from <a href="https://vimeo.com/user26937759">FAS - Formation en ligne</a> on <a href="https://vimeo.com">Vimeo</a>.
-                    </p>
+                    </p>-->
+
+                    <b-embed type="iframe"
+                            aspect="16by9"
+                            src="https://player.vimeo.com/video/179089952?title=0"
+                            allowfullscreen>
+                    </b-embed>
                 </b-modal>
 
             </b-col>
