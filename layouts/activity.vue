@@ -3,11 +3,13 @@
     <b-navbar type="light" variant="light" sticky>
         <b-navbar-nav >
             <b-nav-item to="../" size="lg" variant="primary" right>
+                <b-button variant="outline-success">
                 Retour aux activités
+                </b-button>
             </b-nav-item>
         </b-navbar-nav>
-        
     </b-navbar>
+
     <nuxt/>
   </div>
 </template>
@@ -23,7 +25,6 @@ Vue.use(BootstrapVue);
 
 export default {
   components: {
-    
   }
 }
 </script>

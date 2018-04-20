@@ -1,6 +1,8 @@
 <template>
   <div>
     <TopNavbar/>
+    <Breadcrumbs/>
+    <ProgressBar/>
     <nuxt/>
   </div>
 </template>
@@ -10,13 +12,27 @@ import TopNavbar from '~/components/TopNavbar.vue'
 
 import Vue from 'vue'
 import BootstrapVue from 'bootstrap-vue'
+import ProgressBar from '~/components/ProgressBar.vue'
+import Breadcrumbs from '~/components/Breadcrumbs.vue'
+
+//import StepNavigation from '~/components/StepNavigation.vue'
 
 
 Vue.use(BootstrapVue);
 
 export default {
   components: {
-    TopNavbar
+    TopNavbar,
+    ProgressBar,
+    Breadcrumbs
+    //StepNavigation
+
+  },
+  data() {
+    return {
+        counter: 3,
+        max: 5
+        }
   }
 }
 </script>

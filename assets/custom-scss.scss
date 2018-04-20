@@ -10,10 +10,15 @@
 /*.nav-tabs .nav-link.active, .tabs .nav-item .nav-link.active {
   border-bottom: 1px solid $primary;
 }*/
-.tabs .nav-link.active, .nav-tabs .nav-item .nav-link {
-  border-bottom: 1px solid $primary;
-  background: red;
+.nav-tabs .nav-item .nav-link {
+  border-bottom: 1px solid inherit;
+  color: $navbar-light-color;
 }
-body {
-    background-color: blue;
+.tabs .nav-link.active {
+  border-bottom: 1px solid $primary;
+  color: $primary;
+  /*background: red;*/
+}
+.nav-pills .nav-link.active {
+ color: $white
 }

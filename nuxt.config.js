@@ -43,6 +43,7 @@ module.exports = {
   ],
 
   routerBase,
+
   /*
   ** Build configuration
   */
@@ -71,7 +72,7 @@ module.exports = {
   router: {
     //base: './',
     linkActiveClass: 'is-active'//,
-    //base: process.env.DEPLOY_ENV === 'STATIC' ? '/nuxt-example/' : '/'
+    //base: process.env.DEPLOY_ENV === 'STATIC' ? '/HST2125-Nuxt/' : '/'
     //base: process.env.NODE_ENV === 'dev' ? '' : '/HST2125-Nuxt/'
   }
 }
