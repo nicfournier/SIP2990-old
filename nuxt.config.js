@@ -18,6 +18,9 @@ module.exports = {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons'}
+    ],
+    base: [
+      { href: 'HST2125-BV/' }
     ]
   },
   /*
@@ -68,11 +71,5 @@ module.exports = {
       }
       return config;
     }
-  },
-  router: {
-    //base: './',
-    linkActiveClass: 'is-active'//,
-    //base: process.env.DEPLOY_ENV === 'STATIC' ? '/HST2125-Nuxt/' : '/'
-    //base: process.env.NODE_ENV === 'dev' ? '' : '/HST2125-Nuxt/'
   }
 }

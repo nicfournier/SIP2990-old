@@ -5,7 +5,7 @@
     <b-collapse is-nav id="nav_dropdown_collapse">
       <b-navbar-nav>
         <b-navbar-brand><i class="material-icons">settings_backup_restore</i> HST2125</b-navbar-brand>
-        <b-nav-item to="/home">Accueil</b-nav-item>
+        <b-nav-item to="/">Accueil</b-nav-item>
         <!-- Navbar dropdowns -->
         <b-nav-item-dropdown text="Parcours pédagogique" right>
           <b-dropdown-item href="#">Semaine 1</b-dropdown-item>

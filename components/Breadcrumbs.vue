@@ -1,7 +1,7 @@
 <template>
     <b-breadcrumb>
-        <b-breadcrumb-item to="/home" text="Accueil"/>
-        <b-breadcrumb-item to="/home" text="Semaine 02"/>
+        <b-breadcrumb-item to="/" text="Accueil"/>
+        <b-breadcrumb-item to="/parcours/S02" text="Semaine 02"/>
         <b-breadcrumb-item active to="/home" text="Aperçu"/>
     </b-breadcrumb>
 </template>
@@ -12,7 +12,7 @@ export default {
     return {
       items: [{
           text: 'Accueil',
-          href: '/home'
+          href: '/'
         }, {
           text: 'Semaine 02',
           href: '/parcours/S02'

@@ -1,12 +1,19 @@
 <template>
   <div>
-    <home/>
+    <!--<home/>-->
+    <b-jumbotron fluid text-variant="primary" header="" lead="Nuxt.js + Bootstrap-vue" class="pb-5" style="background-image: url(https://farm4.staticflickr.com/3941/15724845132_e3e48480d6_b.jpg); background-size: cover;">
+      <template slot="header">
+        HST2125
+      </template>
+      <p></p>
+      <b-btn variant="primary" to="parcours/S02/">Semaine 02</b-btn>
+    </b-jumbotron>
   </div>
 </template>
 
 
 <script>
-import home from '~/pages/home.vue'
+//import home from '~/pages/parcours/parcours.vue'
 
 import Vue from 'vue'
 import BootstrapVue from 'bootstrap-vue'
@@ -17,7 +24,7 @@ Vue.use(BootstrapVue);
 export default {
   layout: 'splash',
   components: {
-    home
+    //home
   }
 }
 </script>
