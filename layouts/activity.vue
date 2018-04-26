@@ -2,7 +2,7 @@
   <div>
     <b-navbar type="light" variant="light" sticky>
         <b-navbar-nav >
-            <b-nav-item to="../" size="lg" variant="primary" right>
+            <b-nav-item to="S02-index" size="lg" variant="primary" right>
                 <b-button variant="outline-success">
                 Retour aux activités
                 </b-button>

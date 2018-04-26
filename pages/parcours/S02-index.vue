@@ -79,7 +79,7 @@
                           
                         </p>
                         <span slot="footer">
-                          <b-button to="/parcours/S02/S02-activities/S02-A01">Activité 1</b-button>
+                          <b-button to="/parcours/S02-A01">Activité 1</b-button>
                         </span>
                       </b-card>
 

@@ -9,7 +9,7 @@
         <!-- Navbar dropdowns -->
         <b-nav-item-dropdown text="Parcours pédagogique" right>
           <b-dropdown-item href="#">Semaine 1</b-dropdown-item>
-          <b-dropdown-item to="/parcours/S02/">Semaine 02</b-dropdown-item>
+          <b-dropdown-item to="/parcours/S02-index">Semaine 02</b-dropdown-item>
           <b-dropdown-item href="#">Semaine 03</b-dropdown-item>
           <b-dropdown-item href="#">Semaine 04</b-dropdown-item>
           <b-dropdown-item  >Semaine 05</b-dropdown-item>
