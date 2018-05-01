@@ -2,7 +2,13 @@
 <template>
     <li slot="step" class=""> <!-- active, completed, danger, info, warning -->
         <span class="bubble"></span>
-        {{ stepTitle }} <br><small>{{ stepStatus }}</small>
+        <span class=""> <!-- stacked-text -->
+            {{ stepTitle }} 
+            <br>
+            <small>
+                {{ stepStatus }}
+            </small>
+        </span>
     </li>
 </template>
 

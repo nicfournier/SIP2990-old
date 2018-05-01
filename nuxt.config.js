@@ -1,8 +1,3 @@
-const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
-  router: {
-    base: '/hst2125-bv/' //'./'
-  }
-} : {}
 module.exports = {
   /*
   ** Headers of the page
@@ -19,6 +14,9 @@ module.exports = {
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons'}
     ]
   },
+  generate: {
+    subFolders: false
+  },
   /*
   ** Customize the progress bar color
   */
@@ -32,7 +30,8 @@ module.exports = {
     // SCSS file in the project
     //'@/assets/css/main.scss'
   ],
-  routerBase,
+  //routerBase,
+  //srcDir: 'parcours/',
   build: {
     /*
     ** Run ESLint on save
@@ -48,11 +47,14 @@ module.exports = {
     }
   },
   //mode: 'spa',
+  //srcDir: 'pages/',
   router: {
-    //base: '/hst2125-bv/',
+    //base: './hst2125-bv/',
     linkActiveClass: 'is-active'//,
     //base: process.env.DEPLOY_ENV === 'STATIC' ? '/nuxt-example/' : '/'
     //base: process.env.NODE_ENV === 'dev' ? '' : '/HST2125-Nuxt/'
   }
 
 }
+
+//https://nuxtjs.org/faq/github-pages

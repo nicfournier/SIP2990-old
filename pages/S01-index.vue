@@ -1,5 +1,6 @@
 <template>
   <div class="apercu">
+    <b-img src="https://lorempixel.com/1600/400/" fluid alt="Responsive image" />
     <div id="tab-intro-content" class="container mt-3">
         <Steps>
             <Step stepTitle="1" slot="step"/>
@@ -153,8 +154,8 @@
                         </span>
                       </b-card>
                   </b-card-group>
-
-                  <b-card-group deck>
+                  <b-row>
+                    <b-col sm="12" md="4">
                       <b-card 
                             header="Activité 1"
                             header-bg-variant="default"
@@ -180,7 +181,8 @@
                           <b-link href="" class="card-link">Détail </b-link>
                         </span>
                       </b-card>
-                    </b-card-group>
+                      </b-col>
+                    </b-row>
                   </div>
                   
                 </b-tab>

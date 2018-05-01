@@ -17,59 +17,14 @@
                                 C’est sans doute l’activité principale pour cette semaine en terme de temps à investir. Visualisez l’ensemble des vidéos d’initiation aux cadres spatio-temporels et lisez la lecture en préparant des fiches de lecture pour chaque espace. Étant donné qu’il s’agit aussi de comprendre l’importance de l’espace et du temps pour l’évolution historique, ces deux catégories devraient se refléter dans la structuration de vos fiches de lecture. Consultez les cartes historiques qui sont mises à votre disposition. En même temps, faites les lectures aussi en conscience des orientations thématiques du cours, surtout de la thématique qui vous a été assignée pour votre travail de recherche. Vu qu’un des objectifs de la discussion en forum (activité 4) sera de prendre une attitude comparative dans le regard sur les différents espaces couverts par le cours, faites une relecture de vos notes de lectures afin d’y discerner des logiques transversales et des points de comparaison en terme de similitudes et différences entre les différents espaces.
                             </p>
                         </b-tab>
-                        <b-tab title="Ressources vidéo">
+                        <b-tab title="Ressources">
                             <b-card-group deck>
                                 <b-card v-b-modal.modal1 img-src="https://lorempixel.com/g/600/300/nature" img-alt="Card image" img-top>
                                     <p class="card-text">
-                                        Présentation - Scandinavie
-                                    </p>
-                                </b-card>
-                                <b-card v-b-modal.modal2 img-src="https://lorempixel.com/g/600/300/nature" img-alt="Card image" img-top>
-                                    <p class="card-text">
-                                        Présentation - Îles britanniques
-                                    </p>
-                                </b-card>
-                                <b-card v-b-modal.modal3 img-src="https://lorempixel.com/g/600/300/nature" img-alt="Card image" img-top>
-                                    <p class="card-text">
-                                        Présentation - Italie
-                                    </p>
-                                </b-card>
-                                <b-card v-b-modal.modal4 img-src="https://lorempixel.com/g/600/300/nature" img-alt="Card image" img-top>
-                                    <p class="card-text">
-                                        Présentation - Espagne
+                                        Une ressource
                                     </p>
                                 </b-card>
                             </b-card-group>
-                            <b-card-group deck>
-                                <b-card v-b-modal.modal5 img-src="https://lorempixel.com/g/600/300/nature" img-alt="Card image" img-top>
-                                    <p class="card-text">
-                                        Présentation - Gaule et Francie
-                                    </p>
-                                </b-card>
-                                <b-card v-b-modal.modal6 img-src="https://lorempixel.com/g/600/300/nature" img-alt="Card image" img-top>
-                                    <p class="card-text">
-                                        Présentation - Europe de l'Est
-                                    </p>
-                                </b-card>
-                                <b-card v-b-modal.modal7 img-src="https://lorempixel.com/g/600/300/nature" img-alt="Card image" img-top>
-                                    <p class="card-text">
-                                        Présentation - Byzance
-                                    </p>
-                                </b-card>
-                                <b-card v-b-modal.modal8 img-src="https://lorempixel.com/g/600/300/nature" img-alt="Card image" img-top>
-                                    <p class="card-text">
-                                        Présentation - Les pays de l'Islam
-                                    </p>
-                                </b-card>
-                            </b-card-group>
-                        </b-tab>
-                        <b-tab title="Autres ressources ?">
-                            <p>
-                                Extrait de Jean-Philippe Genet, Le monde au Moyen Âge - HST2125-Texte01
-                            </p>
-                            <p>
-                                Cartes historiques - HST2125-Carte01
-                            </p>
                         </b-tab>
                     </b-tabs>
                 </b-col>

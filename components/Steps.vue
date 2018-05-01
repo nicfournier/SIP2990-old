@@ -12,7 +12,7 @@
 </template>-->
 
 <template>
-    <ul class="progress-indicator">
+    <ul class="progress-indicator "> <!-- stacked -->
         <slot name="step"></slot>
     </ul>
 </template>

@@ -6,7 +6,14 @@
         HST2125
       </template>
       <p></p>
-      <b-btn variant="primary" to="parcours/S02-index">Semaine 02</b-btn>
+      <b-row>
+        <b-col>
+          <b-btn variant="primary" to="S01-index">Semaine 01</b-btn>
+        </b-col>
+        <b-col>
+          <b-btn variant="primary" to="S02-index">Semaine 02</b-btn>
+        </b-col>
+    </b-row>
     </b-jumbotron>
   </div>
 </template>

@@ -1,5 +1,6 @@
 <template>
   <div class="apercu">
+    <b-img src="https://lorempixel.com/1600/400/" fluid alt="Responsive image" />
     <div id="tab-intro-content" class="container mt-3">
       <div class="columns">
         <div class="column">
@@ -79,7 +80,7 @@
                           
                         </p>
                         <span slot="footer">
-                          <b-button to="/parcours/S02-A01">Activité 1</b-button>
+                          <b-button to="S02-A01">Activité 1</b-button>
                         </span>
                       </b-card>
 
@@ -123,8 +124,7 @@
                           Préparer le dossier documentaire pour l'atelier hebdomadaire avec fiches de source.
                         </h5>
                         <span slot="footer">
-                          <b-link href="" class="card-link">Détail </b-link>
-
+                          <b-button to="S02-A03">Activité 3</b-button>
                         </span>
                       </b-card>
                   </b-card-group>
@@ -198,12 +198,10 @@ export default {
       //isActive: true
       items: [{
           text: 'Accueil',
-          href: '/home'
+          href: 'index'
         }, {
-          text: 'Semaine 02',
+          text: 'Semaine 02 - Aperçu',
           href: '/parcours/S02'
-        }, {
-          text: 'Aperçu',
         }]
     }
   }
