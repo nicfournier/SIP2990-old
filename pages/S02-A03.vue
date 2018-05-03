@@ -18,8 +18,10 @@
                             </p>
                         </b-tab>
                         <b-tab title="Ressources">
-                            <MappaMundi reference="p. 4-8" author="Auteur"></MappaMundi>
-                            <MappaMundi reference="p. 2-6" author=""></MappaMundi>
+                            <CardLabel title="lecture" classB="badge-success">
+                                <MappaMundi image="https://pbs.twimg.com/media/DMaTIsiWkAEekTs.jpg" reference="p. 2-6" author=""></MappaMundi>
+                                <MappaMundi image="https://pbs.twimg.com/media/DMaTIsiWkAEekTs.jpg" reference="p. 8-10" author=""></MappaMundi>
+                            </CardLabel>
                         </b-tab>
                     </b-tabs>
                 </b-col>
@@ -54,19 +56,15 @@
 <script>
 import Modal from '~/components/Modal.vue'
 import MappaMundi from '~/components/course/MappaMundi.vue'
+import CardLabel from '~/components/CardLabel.vue'
 
 export default {
     layout: 'activity',
     components: {
         Modal,
-        MappaMundi
-        },
-        data () {
-        return {
-            msg: 'semaine 2'//,
-            //isActive: true
+        MappaMundi,
+        CardLabel
         }
-    }
 }
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->

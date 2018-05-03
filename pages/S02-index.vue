@@ -80,7 +80,7 @@
                           
                         </p>
                         <span slot="footer">
-                          <b-button to="S02-A01">Activité 1</b-button>
+                          <b-button to="S02-A01" v-b-popover.hover="'Accéder à l\'activité'">Activité 1</b-button>
                         </span>
                       </b-card>
 

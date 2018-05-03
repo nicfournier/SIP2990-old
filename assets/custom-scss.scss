@@ -4,6 +4,10 @@
 .material-icons {
   vertical-align: text-top;
 }
+
+/***************
+**   tabs   ***
+**************/
 .nav-tabs .nav-link {
   border-width: 0;
 }
@@ -21,4 +25,40 @@
 }
 .nav-pills .nav-link.active {
  color: $white
+}
+
+/********************
+**   BadgeIcon   ***
+*******************/
+.badge-icon {
+  display: inline-block;
+  margin: 0;
+  font-weight: 300;
+  text-align: center;
+  vertical-align: middle;
+  /*touch-action: manipulation;*/
+  cursor: inherit /*pointer*/;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  /*padding: 6px 12px;*/
+  font-size: 14px;
+  line-height: 1.644;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 0 0.375rem 0 0.375rem; /*0 0.375rem 0 0.75rem;*/
+}
+.btn-label {
+  position: relative;
+  background: rgba(0, 0, 0, .15);
+  display: inline-block;
+  padding: 1px 7px;/*3px 7px;*/
+  left: -0.375rem;/*-14px;*/
+  border-radius: 3px 0 0 3px
+}
+.material-icons {
+  vertical-align: middle;
 }

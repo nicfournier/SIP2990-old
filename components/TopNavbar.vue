@@ -24,12 +24,15 @@
           <b-dropdown-item >Semaine 14</b-dropdown-item>
           <b-dropdown-item >Semaine 15</b-dropdown-item>
         </b-nav-item-dropdown>
-        <b-nav-item-dropdown text="Orientation et thématiques" right>
+        <b-nav-item-dropdown text="Ressources" right>
+          <b-dropdown-header>Orientation et thématiques</b-dropdown-header>
           <b-dropdown-item href="#">Politique et droit</b-dropdown-item>
           <b-dropdown-item to="">Société et économie</b-dropdown-item>
           <b-dropdown-item href="#">Église et religion</b-dropdown-item>
           <b-dropdown-item href="#">Culture et mentalités</b-dropdown-item>
           <b-dropdown-item  >Les sciences auxiliaires de l’histoire</b-dropdown-item>
+          <b-dropdown-divider></b-dropdown-divider>
+          <b-dropdown-header>Autre</b-dropdown-header>
         </b-nav-item-dropdown>
       </b-navbar-nav>
     </b-collapse>

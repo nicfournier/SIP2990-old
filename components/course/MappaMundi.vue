@@ -1,5 +1,7 @@
 <template>
     <BookCard 
+        v-bind:image="image"
+        v-bind:blank="blank"
         title="Mappa mundi de Fleury" 
         author="dir. O. Guyotjeannin/E. Poulle"
         edition=""
@@ -20,6 +22,8 @@ export default {
         BookCard
     },
     props: [
+        'image',
+        'blank',
         'reference'
         ]
 }
