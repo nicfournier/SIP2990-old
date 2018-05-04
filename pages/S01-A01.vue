@@ -4,27 +4,27 @@
         <b-container class="">
             <b-row  align-h="end">
                 <b-col>
-                    <h4 class="alert-heading">Activité 3</h4>
-                    <h5>
-                        Lire l'article en rapport avec la thématique de groupe assignée avec fiche de lecture.
-                    </h5>
+                    <h4 class="alert-heading">Activité 1</h4>
+                    <p>
+                        Visualiser les vidéos d'initiation aux cadres spatio-temporels et effectuer les lectures avec fiche de lecture en considérant en particulier la thématique de groupe assignée.
+                    </p>
                     <hr>
                     <p> 
                     </p>
                     <b-tabs pills card vertical>
                         <b-tab title="Consignes" active>
                             <p>
-                                C’est la deuxième grande activité de préparation individuelle de cette semaine.
-                            </p>
-                            <p>
-                                Ce sera l’occasion de lancer l’approfondissement de vos connaissances dans le domaine thématique que vous avez choisi pour le projet de recherche, donc une étape importante dans la précision de votre sujet de recherche. Il s’agit aussi d’un élément de préparation important pour la discussion en groupe et l’atelier hebdomadaire.
+                                C’est sans doute l’activité principale pour cette semaine en terme de temps à investir. Visualisez l’ensemble des vidéos d’initiation aux cadres spatio-temporels et lisez la lecture en préparant des fiches de lecture pour chaque espace. Étant donné qu’il s’agit aussi de comprendre l’importance de l’espace et du temps pour l’évolution historique, ces deux catégories devraient se refléter dans la structuration de vos fiches de lecture. Consultez les cartes historiques qui sont mises à votre disposition. En même temps, faites les lectures aussi en conscience des orientations thématiques du cours, surtout de la thématique qui vous a été assignée pour votre travail de recherche. Vu qu’un des objectifs de la discussion en forum (activité 4) sera de prendre une attitude comparative dans le regard sur les différents espaces couverts par le cours, faites une relecture de vos notes de lectures afin d’y discerner des logiques transversales et des points de comparaison en terme de similitudes et différences entre les différents espaces.
                             </p>
                         </b-tab>
                         <b-tab title="Ressources">
-                            <ActivityCard title="lecture" colorType="success">
-                                <MappaMundi image="https://pbs.twimg.com/media/DMaTIsiWkAEekTs.jpg" reference="p. 2-6" author=""></MappaMundi>
-                                <MappaMundi image="https://pbs.twimg.com/media/DMaTIsiWkAEekTs.jpg" reference="p. 8-10" author=""></MappaMundi>
-                            </ActivityCard>
+                            <b-card-group deck>
+                                <b-card v-b-modal.modal1 img-src="https://lorempixel.com/g/600/300/nature" img-alt="Card image" img-top>
+                                    <p class="card-text">
+                                        Une ressource
+                                    </p>
+                                </b-card>
+                            </b-card-group>
                         </b-tab>
                     </b-tabs>
                 </b-col>
@@ -58,16 +58,18 @@
 
 <script>
 import Modal from '~/components/Modal.vue'
-import MappaMundi from '~/components/course/MappaMundi.vue'
-import ActivityCard from '~/components/ActivityCard.vue'
 
 export default {
     layout: 'activity',
     components: {
-        Modal,
-        MappaMundi,
-        ActivityCard
+        Modal
+        },
+        data () {
+        return {
+            msg: 'semaine 2'//,
+            //isActive: true
         }
+    }
 }
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->

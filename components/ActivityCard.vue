@@ -5,8 +5,7 @@
                 class="justify-content-end"  
                 v-bind:icon="icon"
                 v-bind:title="title"
-                v-bind:classA="classA"
-                v-bind:classB="classB"
+                v-bind:colorType="colorType"
                 >
             </BadgeIcon>
         </div>
@@ -37,13 +36,9 @@ export default {
             //required:true,
             default:'Livre'
         },
-        classA:{
+        colorType:{
             type:String,
-            default:'badge-icon '
-        },
-        classB:{
-            type:String,
-            default:'badge-secondary'
+            default:'secondary'
         },
     }
 }

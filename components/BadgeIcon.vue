@@ -1,5 +1,5 @@
 <template>
-    <div v-bind:class="[classA + classB]">
+    <div v-bind:class="['badge-icon ' + 'badge-' + colorType]">
         <span class="btn-label">
             <i class="material-icons">
                 {{ icon }}
@@ -18,13 +18,9 @@ export default {
         'title'
     ]*/
     props: {
-        classA:{
+        colorType:{
             type:String,
-            default:'badge-icon '
-        },
-        classB:{
-            type:String,
-            default:'badge-secondary'
+            default:'secondary'
         },
         icon:{
             type:String,
