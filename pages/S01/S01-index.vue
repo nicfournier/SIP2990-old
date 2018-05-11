@@ -39,7 +39,7 @@
                   <div class="mt-3">
                     <h4>
                       Objectifs de la semaine 
-                  <i class="material-icons">bullseye</i>
+                      <i class="material-icons">bullseye</i>
                     </h4>
                     <ul>
                       <li>Comprendre l’organisation du cours</li>
@@ -83,10 +83,9 @@
                     <b-card-group deck>
                       <NavigationCard title="Activité 1" icon="record_voice_over" colorType="success" textColor="light" activityLink="S01-A01">
                         <h4 slot="actTitle">Atelier d'initiation</h4>
-                        <!--<p slot="content">Une description</p>-->
                       </NavigationCard>
                       <NavigationCard icon="forum" title="Activité 2" colorType="secondary" textColor="light" imgSrc="//lorempixel.com/600/300/">
-                        <h4 slot="actTitle">Se présenter dans le forum Présentations</h4>
+
                       </NavigationCard>
                       <NavigationCard icon="remove_red_eye" title="Activité 3" colorType="white">
                         <h4 slot="actTitle">Se familiariser avec l'organisation du cours et formuler les attentes</h4>
@@ -108,7 +107,7 @@
                   </b-card-group>
                   </div>
                 </b-tab>
-            </b-tabs> 
+            </b-tabs>
         </section>
 
         </div>

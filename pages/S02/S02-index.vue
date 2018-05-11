@@ -1,6 +1,11 @@
 <template>
   <div class="apercu">
-    <b-img src="https://lorempixel.com/1600/400/" fluid alt="Responsive image" />
+    <b-jumbotron 
+      bg-variant="https://farm6.staticflickr.com/5564/30027314480_81db2b8384_b.jpg" 
+      header="Titre ?" 
+      lead="" 
+      text-variant="white">
+    </b-jumbotron>
     <div id="tab-intro-content" class="container mt-3">
       <div class="columns">
         <div class="column">
@@ -12,7 +17,7 @@
           </p>
 
           <section>
-            <b-tabs>
+            <!--<b-tabs>
                 <b-tab title="Objectifs">
                   <div class="mt-3">
                     <h4>
@@ -83,7 +88,7 @@
                   </div>
                   
                 </b-tab>
-            </b-tabs> 
+            </b-tabs> -->
         </section>
 
         </div>
@@ -134,5 +139,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+.jumbotron {
+  background: url(https://farm6.staticflickr.com/5564/30027314480_81db2b8384_b.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 </style>

@@ -12,12 +12,13 @@
             </BadgeIcon>
         </div>
         <div class="card-body">
-            <h5 class="card-title">
+            <div class="card-title">
                 <slot name="actTitle"></slot>
-            </h5>
-            <p class="card-text">
+                <!--{{ actTitle }}-->
+            </div>
+            <div class="card-text">
                 <slot name="content"></slot>
-            </p>
+            </div>
         </div>
         <div v-bind:class="['card-footer ' + 'bg-' + colorType]" >
             <!--<b-link href="" class="card-link">Accéder </b-link>-->
