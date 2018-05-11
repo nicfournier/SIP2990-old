@@ -1,9 +1,11 @@
 <template>
+  <div>
     <b-breadcrumb>
         <b-breadcrumb-item to="/" text="Accueil"/>
         <b-breadcrumb-item to="/parcours/S02" text="niveau 1"/>
         <b-breadcrumb-item active to="/home" text="niveau 2"/>
     </b-breadcrumb>
+  </div>
 </template>
 
 <script>

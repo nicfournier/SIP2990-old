@@ -14,9 +14,9 @@ module.exports = {
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons'}
     ]
   },
-  generate: {
+  /*generate: {
     subFolders: false
-  },
+  },*/
   /*
   ** Customize the progress bar color
   */
@@ -36,25 +36,33 @@ module.exports = {
     /*
     ** Run ESLint on save
     */
-    //publicPath: 'hst2125-bv/',
+
+   // activer pour generate
+    publicPath: '_nuxt/',
     
-    extend (config, { isDev, isClient }) {
+    /*extend (config, { isDev, isClient }) {
       if (!isDev) {
         // relative links, please.
         config.output.publicPath = './_nuxt/'
       }
       return config;
+    }*/
+    extend(config, ctx) {
     }
   },
-  //mode: 'spa',
+  mode: 'universal',
   //srcDir: 'pages/',
   router: {
-    //base: './hst2125-bv/',
-    linkActiveClass: 'is-active'//,
+
+
+   // activer pour generate
+    //base: '/pluginfile.php/3749063/mod_resource/content/23/hst2125-bv'
+    base: '/pluginfile.php/3810133/mod_resource/content/4/hst2125-bv/'
+
+    //linkActiveClass: 'is-active'//,
     //base: process.env.DEPLOY_ENV === 'STATIC' ? '/nuxt-example/' : '/'
     //base: process.env.NODE_ENV === 'dev' ? '' : '/HST2125-Nuxt/'
   }
 
 }
 
-//https://nuxtjs.org/faq/github-pages

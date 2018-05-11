@@ -1,7 +1,7 @@
 <template>
   <div>
     <TopNavbar/>
-    <Breadcrumbs/>
+    <!--<Breadcrumbs/>-->
     <!--<ProgressBar/>-->
     <nuxt/>
   </div>

@@ -22,6 +22,9 @@ export default {
 </script>
 
 <style  lang="scss" scoped>
+
+@import '@/assets/custom-scss.scss';
+
 .flexer,.progress-indicator{
     display:-webkit-box;
     display:-moz-box;
@@ -173,6 +176,16 @@ export default {
     display:block;
     margin-left:40px!important
 }
+
+// added
+.progress-indicator>li.secondary .bubble,.progress-indicator>li.secondary .bubble:after,.progress-indicator>li.secondary .bubble:before{
+    background-color:$secondary;
+    border-color:darken($secondary, 15%)
+}
+.progress-indicator>li.secondary .bubble{
+    color:$secondary
+}
+
 @media handheld,screen and (max-width:400px){
     .progress-indicator{
         font-size:60%

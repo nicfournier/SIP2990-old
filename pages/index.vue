@@ -8,10 +8,10 @@
       <p></p>
       <b-row>
         <b-col>
-          <b-btn variant="primary" to="S01-index">Semaine 01</b-btn>
+          <b-btn variant="primary" to="S01/S01-index">Semaine 01</b-btn>
         </b-col>
         <b-col>
-          <b-btn variant="primary" to="S02-index">Semaine 02</b-btn>
+          <b-btn variant="primary" to="S02/S02-index">Semaine 02</b-btn>
         </b-col>
     </b-row>
     </b-jumbotron>
@@ -38,7 +38,7 @@ export default {
 
 <style lang="scss">
 
-@import '~/assets/custom-scss.scss';
+@import '@/assets/custom-scss.scss';
 
 </style>
 

@@ -1,6 +1,8 @@
 <template>
-    <div v-bind:class="['card ' + ' mb-3 ' + 'text-white ' + 'bg-' + colorType]" style="background-image: url(https://lorempixel.com/600/300/food/5/)"> <!-- 'border-primary ' + -->
-        <div class="card-header">
+    <div 
+        v-bind:class="['card', 'mb-3', 'text-' + textColor, 'bg-' + colorType]"
+        v-bind:style="{ backgroundImage: 'url(' + imgSrc + ')', borderWidth: '1px', borderColor: textColor }"> <!-- 'border-primary ' + -->
+        <div v-bind:class="['card-header', 'bg-' + colorType]">
             <BadgeIcon
                 class="justify-content-end"  
                 v-bind:icon="icon"
@@ -17,14 +19,12 @@
                 <slot name="content"></slot>
             </p>
         </div>
-        <div v-bind:class="['card-footer ' + 'bg-' + colorType]">
+        <div v-bind:class="['card-footer ' + 'bg-' + colorType]" >
             <!--<b-link href="" class="card-link">Accéder </b-link>-->
-            <b-button  size="sm" v-bind:to="activityLink" v-bind:class="['btn-' + 'outline-' + 'light']"> {{ linkTerm }}</b-button>
+            <b-button  size="sm"  v-bind:to="activityLink" v-bind:class="['btn-' + 'outline-' + textColor]">{{ linkTerm }}</b-button>
         </div>
     </div> 
 </template>
-
-
 
 <script>
 import BadgeIcon from '~/components/BadgeIcon.vue'
@@ -48,9 +48,29 @@ export default {
             //required:true,
             default:'Livre'
         },
+        textColor: {
+            type:String,
+            default:'dark'
+            /*function () {
+                if (this.colorType != 'white') {
+                return 'white'
+                } else { return 'dark'}
+            }*/
+        },/*: {
+            type:String,
+            default:
+                if (colorType = 'secondary') {
+                return 'white'
+            }
+            //default:'text-white'
+        },*/
         colorType:{
             type:String,
-            default:'secondary'
+            default:'default' //primary, secondary, success, danger, warning, info, light, dark, body, muted, white, black-50, white-50
+        },
+        imgSrc:{
+            type:String,
+            default:''
         },
         content:{
             type:String,
@@ -64,11 +84,37 @@ export default {
             type:String,
             default:'Accéder'
         }
-    }
+    }/*,
+    computed: {
+        colorSelector: function () {
+            if (this.colorType != 'secondary') {
+                return 'white'
+            } else  {
+                    'black'
+                }
+        }
+    }*/
 }
 </script>
 
-<style>
+<style lang="scss">
+@import '@/assets/custom-scss.scss';
+
+.btn-outline-white, .btn-outline-white{
+    border-color: $white;
+}
+.btn-outline-black{
+    border-color: $black;
+}
+.btn-outline-muted{
+    border-color: $gray-600;
+}
+.btn-outline-default{
+    border-color: $card-border-color;
+}
+.card {
+    border-color: $card-border-color;/*$gray-500;*/
+}
 .card-header {
     padding: 0;
 }
