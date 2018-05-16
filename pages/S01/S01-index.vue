@@ -84,18 +84,18 @@
                       <NavigationCard title="Activité 1" icon="record_voice_over" colorType="success" textColor="light" activityLink="S01-A01">
                         <h4 slot="actTitle">Atelier d'initiation</h4>
                       </NavigationCard>
-                      <NavigationCard icon="forum" title="Activité 2" colorType="secondary" textColor="light" imgSrc="//lorempixel.com/600/300/">
-
+                      <NavigationCard icon="forum" title="Activité 2" colorType="secondary" textColor="light" imgSrc="" activityLink="S01-A02">
+                        <h4 slot="actTitle">Se présenter dans le forum Présentations</h4>
                       </NavigationCard>
-                      <NavigationCard icon="remove_red_eye" title="Activité 3" colorType="white">
+                      <NavigationCard icon="remove_red_eye" title="Activité 3" colorType="white" activityLink="S01-A03">
                         <h4 slot="actTitle">Se familiariser avec l'organisation du cours et formuler les attentes</h4>
                       </NavigationCard>
-                      <NavigationCard icon="remove_red_eye"  textColor="dark" title="Activité 4" colorType="white">
+                      <NavigationCard icon="remove_red_eye"  textColor="dark" title="Activité 4" colorType="white" activityLink="S01-A04">
                         <h4 slot="actTitle">Prendre connaissance des principes de fiche de lecture</h4>
                       </NavigationCard>
                     </b-card-group>
                     <b-card-group deck>
-                      <NavigationCard icon="book" title="Activité 5" colorType="white" textColor="dark">
+                      <NavigationCard icon="book" title="Activité 5" colorType="white" textColor="dark" activityLink="S01-A05">
                         <h4 slot="actTitle">S'initier aux dimensions spatio-temporels à l'aide du module "Initiation au haut Moyen Âge" avec fiche de lecture 1</h4>
                       </NavigationCard>
                       <NavigationCard icon="remove_red_eye" title="Activité 6" colorType="white" textColor="dark">

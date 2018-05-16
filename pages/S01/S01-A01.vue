@@ -10,7 +10,7 @@
             <b-row  align-h="end">
                 <b-col>
                     <h4 class="alert-heading">Activité 1</h4>
-                    <p>
+                    <p  class="lead">
                         Je vous souhaite tout d’abord la bienvenue au cours!
                     </p>
                     <hr>

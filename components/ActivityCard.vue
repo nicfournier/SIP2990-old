@@ -1,5 +1,5 @@
 <template>
-    <div class="card">
+    <div class="card activity-card">
         <div class="card-header">
             <BadgeIcon
                 class="justify-content-end"  
@@ -15,11 +15,25 @@
             <a href="#" class="btn btn-primary">Go somewhere</a>-->
             <slot></slot>
         </div>
+        <b-card-footer footer-bg-variant="warning" class="text-center">
+            
+                <div class="col-md-12">
+                    <b-form-checkbox v-bind:id="id"
+                                    value="accepted"
+                                    unchecked-value="not_accepted">
+                    {{ checkTerm }}
+                    </b-form-checkbox>
+                    <!--<b-button variant="warning">
+                        
+                        J'ai terminé cette activité
+                    </b-button>-->
+                </div>
+        </b-card-footer>
     </div>
 </template>
 
 <script>
-import BadgeIcon from '~/components/BadgeIcon.vue'
+import BadgeIcon from '@/components/BadgeIcon.vue'
 
 export default {
     components: {
@@ -40,6 +54,14 @@ export default {
             type:String,
             default:'secondary'
         },
+        id:{
+            type: String,
+            default: 'HST2125-S01-A01'
+        },
+        checkTerm:{
+            type:String,
+            default: 'J\'ai terminé cette activité'
+        }
     }
 }
 </script>
@@ -72,5 +94,11 @@ export default {
     user-select: none;
     padding: 0 6px 0 6px;
     padding: 0 0.375rem 0 0.375rem;
+}
+.card-footer{
+    padding: 0 0.375rem 0 0.375rem;
+}
+.card-body + .carousel {
+    padding: 0;
 }
 </style>

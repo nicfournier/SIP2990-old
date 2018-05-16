@@ -69,6 +69,9 @@ export default {
 .media + .media {
     margin-top: 10px
 }
+.carousel .media {
+    border-color: transparent;
+}
 </style>
 
 

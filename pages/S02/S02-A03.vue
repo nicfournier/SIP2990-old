@@ -57,9 +57,9 @@
 </template>
 
 <script>
-import Modal from '~/components/Modal.vue'
-import MappaMundi from '~/components/course/MappaMundiFleury.vue'
-import ActivityCard from '~/components/ActivityCard.vue'
+import Modal from '@/components/Modal.vue'
+import MappaMundiFleury from '@/components/course/MappaMundiFleury.vue'
+import ActivityCard from '@/components/ActivityCard.vue'
 
 export default {
     layout: 'activity',
