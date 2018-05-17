@@ -11,7 +11,7 @@
                     <hr>
                     <p> 
                     </p>
-                    <b-tabs pills card vertical>
+                    <b-tabs card>
                         <b-tab title="Consignes" active>
                             <p>
                                 C’est la deuxième grande activité de préparation individuelle de cette semaine.

@@ -14,42 +14,31 @@
                     <b-tabs pills card vertical>
                         <b-tab title="Consignes" active>
                             <p>
-                                C’est sans doute l’activité principale pour cette semaine en terme de temps à investir. Visualisez l’ensemble des vidéos d’initiation aux cadres spatio-temporels et lisez la lecture en préparant des fiches de lecture pour chaque espace. Étant donné qu’il s’agit aussi de comprendre l’importance de l’espace et du temps pour l’évolution historique, ces deux catégories devraient se refléter dans la structuration de vos fiches de lecture. Consultez les cartes historiques qui sont mises à votre disposition. En même temps, faites les lectures aussi en conscience des orientations thématiques du cours, surtout de la thématique qui vous a été assignée pour votre travail de recherche. Vu qu’un des objectifs de la discussion en forum (activité 4) sera de prendre une attitude comparative dans le regard sur les différents espaces couverts par le cours, faites une relecture de vos notes de lectures afin d’y discerner des logiques transversales et des points de comparaison en terme de similitudes et différences entre les différents espaces.
+                                C’est sans doute l’activité principale pour cette semaine en terme de temps à investir. Elle est en continuité de l’activité 5 de la semaine 1:
                             </p>
+                            <ol>
+                                <li>Lisez les textes en préparant une fiche de lecture pour chacun. Servez-vous aussi de la grille thématique que l’on a établie lors de l’atelier d’initiation. Étant donné qu’il s’agit aussi de comprendre l’importance de l’espace et du temps pour l’évolution historique, ces deux catégories devraient se refléter dans la structuration de vos fiches de lecture. Consultez les cartes historiques qui sont mises à votre disposition.</li>
+                                <li>En même temps, faites les lectures aussi en conscience des orientations thématiques du cours, surtout de la thématique qui vous a été assignée pour votre travail de recherche. Vu qu’un des objectifs de la discussion en forum (activité 4) sera de prendre une attitude comparative dans le regard sur les différents espaces couverts par le cours, faites une relecture de vos notes de lectures afin d’y discerner des logiques transversales et des points de comparaison en terme de similitudes et de différences entre les différents espaces.</li>
+                            </ol>
                         </b-tab>
                         <b-tab title="Ressources">
-                            <b-card-group deck>
-                                <b-card v-b-modal.modal1 img-src="https://lorempixel.com/g/600/300/nature" img-alt="Card image" img-top>
-                                    <p class="card-text">
-                                        Une ressource
-                                    </p>
-                                </b-card>
-                            </b-card-group>
+                            <b-tabs>
+                                <b-tab title="Lecture" active>
+                                    <b-card-group deck>
+                                        <b-card v-b-modal.modal1 img-src="https://lorempixel.com/g/600/300/nature" img-alt="Card image" img-top>
+                                            <p class="card-text">
+                                                Une ressource
+                                            </p>
+                                        </b-card>
+                                    </b-card-group>
+                                </b-tab>
+                                <b-tab title="Cartes" active>
+                                    <b-form-select v-model="selected" :options="options" class="mb-3" />
+                                    <div>Cartes: <strong>{{ selected }}</strong></div>
+                                </b-tab>
+                            </b-tabs>
                         </b-tab>
                     </b-tabs>
-                </b-col>
-            </b-row>
-            <b-row>
-                <b-col>
-                </b-col>
-            </b-row>
-            <b-row>
-                <b-col>
-                    
-                    <!-- Modal Component -->
-                    <b-modal id="modal1" size="lg" title="Présentation - Scandinavie" centered>
-                        <!--<iframe src="https://player.vimeo.com/video/179089952?title=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                        <p>
-                            <a href="https://vimeo.com/179089952">a-venir</a> from <a href="https://vimeo.com/user26937759">FAS - Formation en ligne</a> on <a href="https://vimeo.com">Vimeo</a>.
-                        </p>-->
-
-                        <b-embed type="iframe"
-                                aspect="16by9"
-                                src="https://player.vimeo.com/video/179089952?title=0"
-                                allowfullscreen>
-                        </b-embed>
-                    </b-modal>
-
                 </b-col>
             </b-row>
         </b-container>
@@ -57,19 +46,31 @@
 </template>
 
 <script>
-import Modal from '@/components/Modal.vue'
 
 export default {
     layout: 'activity',
     components: {
-        Modal
+        
         },
         data () {
-        return {
-            msg: 'semaine 2'//,
-            //isActive: true
+            return {
+            selected: null,
+            options: [
+                { value: null, text: 'Catégories de cartes' },
+                { value: 'a', text: 'Europe et cartes globales' },
+                { value: 'b', text: 'Empire romain tardif et le temps des migrations' },
+                { value: 'C', text: 'Byzance, les Juifs et le monde musulman' },
+                { value: 'd', text: 'Italie', disabled: true },
+                { value: {'e': '3PO'}, text: 'Péninsule Ibérique' },
+                { value: {'f': '3PO'}, text: 'Royaumes des Francs' },
+                { value: {'g': '3PO'}, text: 'Francie occidentale – Francie' },
+                { value: {'h': '3PO'}, text: 'Francie orientale – Germanie' },
+                { value: {'i': '3PO'}, text: 'Îles Britanniques' },
+                { value: {'j': '3PO'}, text: 'Scandinavie' },
+                { value: {'k': '3PO'}, text: 'Europe de l’Est' }
+            ]
+            }
         }
-    }
 }
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->

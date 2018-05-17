@@ -14,7 +14,7 @@
                     <hr>
                     <p> 
                     </p>
-                    <b-tabs >
+                    <b-tabs pills card vertical>
                         <b-tab title="Europe et cartes globales" active>
                         </b-tab>
                         <b-tab title="Empire romain tardif et le temps des migrations" >
