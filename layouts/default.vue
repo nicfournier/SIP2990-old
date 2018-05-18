@@ -4,6 +4,7 @@
     <!--<Breadcrumbs/>-->
     <!--<ProgressBar/>-->
     <nuxt/>
+    <Footer/>
   </div>
 </template>
 

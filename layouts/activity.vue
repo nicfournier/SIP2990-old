@@ -48,6 +48,8 @@ export default {
     mode: 'out-in'
   },
   components: {
+    Footer
+    //StepNavigation
   }
 }
 </script>

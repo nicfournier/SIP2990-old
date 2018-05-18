@@ -1,30 +1,32 @@
 <template>
-    <div class="footer">
-        <ul class="list-inline">
-            <li class="list-inline-item">Lorem ipsum</li>
-            <li class="list-inline-item">Phasellus iaculis</li>
-            <li class="list-inline-item">Nulla volutpat</li>
-    </ul>
+  <div class="footer fixed-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <p class="lead">
+            HST2125 - Le Moyen Âge européen 5e - 10e siècle<br/>
+            <small>Faculté des arts et sciences, 2018</small>
+          </p>
+        </div>
+        <div class="col-sm">
+          
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  data () {
-    return {
-      items: [{
-        text: 'Accueil',
-        href: '#'
-      }, {
-        text: 'Parcours pédagogique',
-        href: '#'
-      }, {
-        text: 'Semaine 2',
-        active: true
-      }]
-    }
-  }
+  
 }
 </script>
 
-<!-- breadcrumb.vue -->
+<style lang="scss" scoped>
+@import '~/assets/custom-scss.scss';
+
+.footer {
+    background-color: $card-border-color; //$card-border-color
+    color: $white;
+}
+</style>
