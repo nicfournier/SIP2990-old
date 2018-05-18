@@ -5,7 +5,7 @@
       <b-collapse is-nav id="nav_dropdown_collapse">
 
         <b-navbar-nav >
-            <b-nav-item to="S01-index" size="lg" variant="primary" right>
+            <b-nav-item to="../" size="lg" variant="primary" right>
                 <b-button variant="outline-success">
                   Retour aux activités
                 </b-button>

@@ -9,10 +9,10 @@
         <!-- Navbar dropdowns -->
         <b-nav-item-dropdown text="Parcours pédagogique" right>
           <b-dropdown-header>Chapitre 1 "Initiation"</b-dropdown-header>
-          <b-dropdown-item to="/S01/S01-index">Semaine 1</b-dropdown-item>
+          <b-dropdown-item to="/S01/">Semaine 1</b-dropdown-item>
           <b-dropdown-divider></b-dropdown-divider>
           <b-dropdown-header>Chapitre 2 "Cadre spatio-temporel"</b-dropdown-header>
-          <b-dropdown-item to="/S02/S02-index">Semaine 02</b-dropdown-item>
+          <b-dropdown-item to="/S02/">Semaine 02</b-dropdown-item>
           <b-dropdown-item href="#">Semaine 03</b-dropdown-item>
           <b-dropdown-divider></b-dropdown-divider>
           <b-dropdown-header>Chapitre 3 "Orientations thématiques"</b-dropdown-header>

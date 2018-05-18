@@ -38,7 +38,7 @@ module.exports = {
     */
 
    // activer pour generate
-    //publicPath: '_nuxt/',
+    publicPath: '_nuxt/',
     
     /*extend (config, { isDev, isClient }) {
       if (!isDev) {
@@ -56,7 +56,7 @@ module.exports = {
 
 
    // activer pour generate
-    //base: '/pluginfile.php/3813557/mod_resource/content/3/hst2125-bv/'
+    base: '/pluginfile.php/3813557/mod_resource/content/3/hst2125-bv/'
     //linkActiveClass: 'is-active'//,
     //base: process.env.DEPLOY_ENV === 'STATIC' ? '/nuxt-example/' : '/'
     //base: process.env.NODE_ENV === 'dev' ? '' : '/HST2125-Nuxt/'
