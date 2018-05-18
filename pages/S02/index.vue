@@ -2,8 +2,8 @@
   <div class="apercu">
     <b-jumbotron 
       bg-variant="https://farm6.staticflickr.com/5564/30027314480_81db2b8384_b.jpg" 
-      header="Titre ?" 
-      lead="" 
+      header="Cadre spatio-temporel" 
+      lead="Chapitre 2" 
       text-variant="white">
     </b-jumbotron>
     <div id="tab-intro-content" class="container mt-3">

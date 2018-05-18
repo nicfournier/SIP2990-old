@@ -3,8 +3,8 @@
     <!--<b-img class="" style="height: 240px" src="https://farm6.staticflickr.com/5564/30027314480_81db2b8384_b.jpg" fluid-grow alt="Responsive image" />-->
     <b-jumbotron 
       bg-variant="https://farm6.staticflickr.com/5564/30027314480_81db2b8384_b.jpg" 
-      header="Titre ?" 
-      lead="" 
+      header="Initiation" 
+      lead="Chapitre 1" 
       text-variant="white">
     </b-jumbotron>
     <!--<div class="jumbotron" style="">

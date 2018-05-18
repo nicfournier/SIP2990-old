@@ -14,6 +14,7 @@ import Vue from 'vue'
 import BootstrapVue from 'bootstrap-vue'
 import ProgressBar from '~/components/ProgressBar.vue'
 import Breadcrumbs from '~/components/Breadcrumbs.vue'
+import Footer from '~/components/Footer.vue'
 
 //import StepNavigation from '~/components/StepNavigation.vue'
 
@@ -24,7 +25,8 @@ export default {
   components: {
     TopNavbar,
     ProgressBar,
-    Breadcrumbs
+    Breadcrumbs,
+    Footer
     //StepNavigation
 
   },
