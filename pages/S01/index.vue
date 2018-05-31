@@ -16,7 +16,7 @@
     </div>-->
     <div id="tab-intro-content" class="container mt-3">
         <Steps>
-            <Step step-title="1" class="completed" stepStatus="terminée" slot="step"/>
+            <Step step-title="1" class="completed" stepStatus="terminée" slot="step" v-b-tooltip.hover title="c'est fait"/>
             <Step step-title="2" class="secondary" stepStatus="visonnée" slot="step"/>
             <Step step-title="3"  slot="step"/>
             <Step step-title="4"  slot="step"/>
@@ -36,37 +36,35 @@
           <section>
             <b-tabs>
                 <b-tab title="Objectifs">
-                  <div class="mt-3">
-                    <h4>
+                  <edObjective>
+                    <h4 slot="header">
                       Objectifs de la semaine 
                       <i class="material-icons">bullseye</i>
                     </h4>
-                    <ul>
+                    <ul slot="content">
                       <li>Comprendre l’organisation du cours</li>
                       <li>Faire connaissance des membres du groupe.</li>
                       <li>S’initier au cadre chronologique et spatio-temporel du cours.</li>
                       <li>S’initier aux grandes thématiques du cours</li>
                       <li>S’initier à la typologie et la méthodologie d’analyse des sources du haut Moyen Âge.</li>
                     </ul>
-                  </div>
+                  </edObjective>
+                  
                 </b-tab>
 
                 <b-tab title="Contenus essentiels" icon="flag-variant">
-                  <div class="mt-3">
-                      <h4>Contenus essentiels</h4>
-                      <ul>
+                  <edEssential>
+                    <ul slot="content">
                         <li>Le haut Moyen Âge comme époque</li>
                         <li>Les grandes thématique de l’époque du haut Moyen Âge</li>
                         <li>Les bases méthodologiques: la recherche et les sources</li>
                       </ul>
-                  </div>
+                  </edEssential>
                 </b-tab>
 
                 <b-tab title="Introduction" icon="debug-step-into">
-                  <div class="mt-3">
-                    <h4>
-                      Introduction
-                    </h4>
+                  <edIntroduction>
+                    <div slot="content">
                     <p>
                       Au-delà de vous souhaiter la bienvenue et de faire votre connaissance, les objectifs de la première semaine sont triples:
                     </p>
@@ -76,15 +74,17 @@
                         <li>S’initier au cadre chronologique et spatio-temporel ainsi qu’aux focalisations thématiques du cours</li>
                     </ol>
                   </div>
+                  </edIntroduction>
                 </b-tab>
 
                 <b-tab title="Activités" icon="filmstrip">
-                  <div class="mt-3">
-                    <b-card-group deck>
-                      <NavigationCard title="Activité 1" icon="record_voice_over" colorType="success" textColor="light" activityLink="S01-Activity/S01-A01">
+                  <edActivity>
+                    <div slot="content">
+                      <b-card-group deck>
+                      <NavigationCard title="Activité 1" icon="record_voice_over" colorType="white" activityLink="/S01-Activity/S01-A01/">
                         <h4 slot="actTitle">Atelier d'initiation</h4>
                       </NavigationCard>
-                      <NavigationCard icon="forum" title="Activité 2" colorType="secondary" textColor="light" imgSrc="" activityLink="S01-Activity/S01-A02">
+                      <NavigationCard icon="forum" title="Activité 2" colorType="white" imgSrc="" activityLink="S01-Activity/S01-A02">
                         <h4 slot="actTitle">Se présenter dans le forum Présentations</h4>
                       </NavigationCard>
                       <NavigationCard icon="remove_red_eye" title="Activité 3" colorType="white" activityLink="S01-Activity/S01-A03">
@@ -105,7 +105,8 @@
                         <h4 slot="actTitle">Atelier d'approfondissement</h4>
                       </NavigationCard>
                   </b-card-group>
-                  </div>
+                    </div>
+                  </edActivity>
                 </b-tab>
             </b-tabs>
         </section>
@@ -136,6 +137,10 @@ import BadgeIcon from '@/components/BadgeIcon.vue'
 import Steps from '@/components/Steps.vue'
 import Step from '@/components/Step.vue'
 import NavigationCard from '@/components/NavigationCard.vue'
+import edObjective from '@/components/edObjective.vue'
+import edEssential from '@/components/edEssential.vue'
+import edIntroduction from '@/components/edIntroduction.vue'
+import edActivity from '@/components/edActivity.vue'
 
 export default {
   layout: 'default',
@@ -143,7 +148,11 @@ export default {
     BadgeIcon,
     Steps,
     Step,
-    NavigationCard
+    NavigationCard,
+    edObjective,
+    edEssential,
+    edIntroduction,
+    edActivity
   },
   data () {
     return {

@@ -3,7 +3,7 @@
     <TopNavbar/>
     <!--<Breadcrumbs/>-->
     <!--<ProgressBar/>-->
-    <nuxt/>
+    <nuxt style="padding-bottom: 80px"/>
     <Footer/>
   </div>
 </template>

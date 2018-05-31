@@ -1,12 +1,13 @@
-<!-- Options 
-textColor="light", "dark"
-colorType=""
--->
 <template>
-    <div 
-        v-bind:class="['card', 'mb-3', 'text-' + textColor, 'bg-' + colorType]"
-        v-bind:style="{ backgroundImage: 'url(' + imgSrc + ')', borderWidth: '1px', borderColor: textColor }"> <!-- 'border-primary ' + -->
-        <div v-bind:class="['card-header', 'bg-' + colorType]">
+    <!--<a v-bind:to="activityLink">-->
+    
+    <div
+        v-bind:class="['card', 'mininavcard', 'mb-3', 'text-' + textColor, 'bg-' + colorType]"
+        > <!-- 'border-primary ' + -->
+        <a v-b-modal.modal1 href="#" class="card">
+        <div 
+        v-bind:class="['card-header', 'bg-' + colorType]"
+        v-bind:style="{ backgroundImage: 'url(' + imgSrc + ')', borderWidth: '1px', borderColor: textColor }">
             <BadgeIcon
                 class="justify-content-end"  
                 v-bind:icon="icon"
@@ -24,10 +25,7 @@ colorType=""
                 <slot name="content"></slot>
             </div>
         </div>
-        <div v-bind:class="['card-footer ' + 'bg-' + colorType]" >
-            <!--<b-link href="" class="card-link">Accéder </b-link>-->
-            <b-button  size="sm"  v-bind:to="activityLink" v-bind:class="['btn-' + 'outline-' + textColor]">{{ linkTerm }}</b-button>
-        </div>
+    </a>
     </div> 
 </template>
 
@@ -84,10 +82,6 @@ export default {
         activityLink:{
             type:String,
             default:'S01-A01'
-        },
-        linkTerm:{
-            type:String,
-            default:'Accéder'
         }
     }/*,
     computed: {
@@ -104,7 +98,16 @@ export default {
 
 <style lang="scss" scoped>
 @import '@/assets/custom-scss.scss';
-
+.mininavcard {
+    border-width: 0;
+    height: 100%;
+}
+.mininavcard a {
+    padding: 0;
+}
+.mininavcard a:hover {
+    text-decoration: none
+}
 .btn-outline-white, .btn-outline-white{
     border-color: $white;
 }
@@ -118,7 +121,7 @@ export default {
     border-color: $card-border-color;
 }
 .card {
-    border-color: $card-border-color;/*$gray-500;*/
+    /*border-color: $card-border-color;*//*$gray-500;*/
 }
 .card-header {
     padding: 0;

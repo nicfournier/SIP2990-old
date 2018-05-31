@@ -13,30 +13,36 @@
                     </p>
                     <b-tabs pills card vertical>
                         <b-tab title="Consignes" active>
-                            <p>
-                                C’est sans doute l’activité principale pour cette semaine en terme de temps à investir. Elle est en continuité de l’activité 5 de la semaine 1:
-                            </p>
-                            <ol>
-                                <li>Lisez les textes en préparant une fiche de lecture pour chacun. Servez-vous aussi de la grille thématique que l’on a établie lors de l’atelier d’initiation. Étant donné qu’il s’agit aussi de comprendre l’importance de l’espace et du temps pour l’évolution historique, ces deux catégories devraient se refléter dans la structuration de vos fiches de lecture. Consultez les cartes historiques qui sont mises à votre disposition.</li>
-                                <li>En même temps, faites les lectures aussi en conscience des orientations thématiques du cours, surtout de la thématique qui vous a été assignée pour votre travail de recherche. Vu qu’un des objectifs de la discussion en forum (activité 4) sera de prendre une attitude comparative dans le regard sur les différents espaces couverts par le cours, faites une relecture de vos notes de lectures afin d’y discerner des logiques transversales et des points de comparaison en terme de similitudes et de différences entre les différents espaces.</li>
-                            </ol>
+                            <edInstruction>
+                                <div slot="content">
+                                    <p>
+                                        C’est sans doute l’activité principale pour cette semaine en terme de temps à investir. Elle est en continuité de l’activité 5 de la semaine 1:
+                                    </p>
+                                    <ol>
+                                        <li>Lisez les textes en préparant une fiche de lecture pour chacun. Servez-vous aussi de la grille thématique que l’on a établie lors de l’atelier d’initiation. Étant donné qu’il s’agit aussi de comprendre l’importance de l’espace et du temps pour l’évolution historique, ces deux catégories devraient se refléter dans la structuration de vos fiches de lecture. Consultez les cartes historiques qui sont mises à votre disposition.</li>
+                                        <li>En même temps, faites les lectures aussi en conscience des orientations thématiques du cours, surtout de la thématique qui vous a été assignée pour votre travail de recherche. Vu qu’un des objectifs de la discussion en forum (activité 4) sera de prendre une attitude comparative dans le regard sur les différents espaces couverts par le cours, faites une relecture de vos notes de lectures afin d’y discerner des logiques transversales et des points de comparaison en terme de similitudes et de différences entre les différents espaces.</li>
+                                    </ol>
+                                </div>
+                            </edInstruction>
                         </b-tab>
                         <b-tab title="Ressources">
-                            <b-tabs>
-                                <b-tab title="Lecture" active>
-                                    <b-card-group deck>
-                                        <b-card v-b-modal.modal1 img-src="https://lorempixel.com/g/600/300/nature" img-alt="Card image" img-top>
-                                            <p class="card-text">
-                                                Une ressource
-                                            </p>
-                                        </b-card>
-                                    </b-card-group>
-                                </b-tab>
-                                <b-tab title="Cartes" active>
-                                    <b-form-select v-model="selected" :options="options" class="mb-3" />
-                                    <div>Cartes: <strong>{{ selected }}</strong></div>
-                                </b-tab>
-                            </b-tabs>
+                            <edResource>
+                                <b-tabs slot="content">
+                                    <b-tab title="Lecture" active>
+                                        <b-card-group deck>
+                                            <b-card v-b-modal.modal1 img-src="https://lorempixel.com/g/600/300/nature" img-alt="Card image" img-top>
+                                                <p class="card-text">
+                                                    Une ressource
+                                                </p>
+                                            </b-card>
+                                        </b-card-group>
+                                    </b-tab>
+                                    <b-tab title="Cartes" active>
+                                        <b-form-select v-model="selected" :options="options" class="mb-3" />
+                                        <div>Cartes: <strong>{{ selected }}</strong></div>
+                                    </b-tab>
+                                </b-tabs>
+                            </edResource>
                         </b-tab>
                     </b-tabs>
                 </b-col>
@@ -46,11 +52,14 @@
 </template>
 
 <script>
+import edInstruction from '@/components/edInstruction.vue'
+import edResource from '@/components/edResource.vue'
 
 export default {
     layout: 'activity',
     components: {
-        
+        edInstruction,
+        edResource
         },
         data () {
             return {

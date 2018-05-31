@@ -1,8 +1,17 @@
 
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import url('https://fonts.googleapis.com/css?family=Kalam');
 
 .material-icons {
   vertical-align: text-top;
+}
+
+/***************
+**   typo   ***
+**************/
+.ed-introduction {
+  font-family: 'Kalam', cursive;
+  font-size: 1.1rem;
 }
 
 /***************
