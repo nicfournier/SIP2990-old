@@ -37,7 +37,7 @@
           <b-dropdown-item  >Initiation au haut Moyen Âge</b-dropdown-item>
           <b-dropdown-divider></b-dropdown-divider>
           <b-dropdown-header>Spatio-temporel</b-dropdown-header>
-          <b-dropdown-item  >Byzance, les Juifs et le monde musulman</b-dropdown-item>
+          <b-dropdown-item  to="../Ressources/R01-index#byz">Byzance, les Juifs et le monde musulman</b-dropdown-item>
           <b-dropdown-item  >Italie</b-dropdown-item>
           <b-dropdown-item  >Péninsule Ibérique</b-dropdown-item>
           <b-dropdown-item  >Royaumes des Francs</b-dropdown-item>

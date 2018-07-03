@@ -14,9 +14,6 @@ module.exports = {
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons'}
     ]
   },
-  /*generate: {
-    subFolders: false
-  },*/
   /*
   ** Customize the progress bar color
   */
@@ -26,40 +23,25 @@ module.exports = {
     // Load a Node.js module directly (here it's a Sass file)
     'bootstrap-vue',
     // CSS file in the project
-    '@/assets/custom-scss.scss'//,
-    // SCSS file in the project
-    //'@/assets/css/main.scss'
+    '@/assets/custom-scss.scss'
   ],
   //routerBase,
   //srcDir: 'parcours/',
   build: {
-    /*
-    ** Run ESLint on save
-    */
 
    // activer pour generate
-    //publicPath: '_nuxt/',
-    
-    /*extend (config, { isDev, isClient }) {
-      if (!isDev) {
-        // relative links, please.
-        config.output.publicPath = './_nuxt/'
-      }
-      return config;
-    }*/
+    publicPath: '_nuxt/',
+  
     extend(config, ctx) {
     }
   },
   mode: 'universal',
-  //srcDir: 'pages/',
   router: {
 
 
    // activer pour generate
-    //base: '/pluginfile.php/3813557/mod_resource/content/3/hst2125-bv/'
-    //linkActiveClass: 'is-active'//,
-    //base: process.env.DEPLOY_ENV === 'STATIC' ? '/nuxt-example/' : '/'
-    //base: process.env.NODE_ENV === 'dev' ? '' : '/HST2125-Nuxt/'
+    //base: '/pluginfile.php/3813557/mod_resource/content/5/hst2125-bv/',
+    linkActiveClass: 'is-active'
   }
 
 }

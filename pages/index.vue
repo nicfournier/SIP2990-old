@@ -1,7 +1,7 @@
 <template>
   <div>
     <!--<home/>-->
-    <b-jumbotron fluid text-variant="primary" header="" lead="Nuxt.js + Bootstrap-vue" class="pb-5" style="background-image: url(https://farm4.staticflickr.com/3941/15724845132_e3e48480d6_b.jpg); background-size: cover;">
+    <b-jumbotron fluid text-variant="primary" header="" lead="Le Moyen Âge européen 5e - 10e siècle" class="pb-5" style="background-image: url(https://farm4.staticflickr.com/3941/15724845132_e3e48480d6_b.jpg); background-size: cover;">
       <template slot="header">
         HST2125
       </template>
@@ -36,10 +36,13 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 
 @import '@/assets/custom-scss.scss';
 
+.jumbotron-fluid {
+  min-height: 100vh;
+}
 </style>
 
 <!--<style lang="scss">

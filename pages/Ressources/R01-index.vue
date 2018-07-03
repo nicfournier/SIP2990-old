@@ -19,7 +19,7 @@
                         </b-tab>
                         <b-tab title="Empire romain tardif et le temps des migrations" >
                         </b-tab>
-                        <b-tab title="Byzance, les Juifs et le monde musulman">
+                        <b-tab id="byz" title="Byzance, les Juifs et le monde musulman">
                             <b-card-group deck>
                                 <b-card v-b-modal.modal1 img-alt="Card image" img-top>
                                     <p class="card-text">
