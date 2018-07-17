@@ -3,7 +3,7 @@
     <!--<home/>-->
     <b-jumbotron fluid text-variant="primary" header="" lead="Le Moyen Âge européen 5e - 10e siècle" class="pb-5" style="background-image: url(https://farm4.staticflickr.com/3941/15724845132_e3e48480d6_b.jpg); background-size: cover;">
       <template slot="header">
-        HST2125
+        SIP2990 - Éthique appliquée en sécurité intérieure
       </template>
       <p></p>
       <b-row>
@@ -15,6 +15,7 @@
         </b-col>
     </b-row>
     </b-jumbotron>
+<Tyles />
   </div>
 </template>
 
@@ -24,6 +25,16 @@
 
 import Vue from 'vue'
 import BootstrapVue from 'bootstrap-vue'
+window.x = require('my-vue-lib-fel');
+
+/*import BadgeIcon from '@/components/signage-collection/BadgeIcon.vue'
+import Steps from '@/components/navigation-collection/Steps.vue'
+import Step from '@/components/navigation-collection/Step.vue'
+import NavigationCard from '@/components/navigation-collection/NavigationCard.vue'
+import edObjective from '@/components/instructional-collection/edObjective.vue'
+import edEssential from '@/components/instructional-collection/edEssential.vue'
+import edIntroduction from '@/components/instructional-collection/edIntroduction.vue'
+import edActivity from '@/components/instructional-collection/edActivity.vue'*/
 
 
 Vue.use(BootstrapVue);
@@ -32,6 +43,7 @@ export default {
   layout: 'splash',
   components: {
     //home
+    
   }
 }
 </script>

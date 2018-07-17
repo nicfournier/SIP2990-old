@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-sm">
           <p class="lead">
-            HST2125 - Le Moyen Âge européen 5e - 10e siècle<br/>
+            SIP2990 - Éthique appliquée en sécurité intérieure<br/>
             <small>Faculté des arts et sciences, 2018</small>
           </p>
         </div>

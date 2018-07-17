@@ -41,8 +41,8 @@
 </template>
 
 <script>
-import Modal from '@/components/Modal.vue'
-import ActivityCard from '@/components/ActivityCard.vue'
+import Modal from '@/components/layout-collection/Modal.vue'
+import ActivityCard from '@/components/instructional-collection/ActivityCard.vue'
 
 export default {
     layout: 'activity',

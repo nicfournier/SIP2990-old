@@ -1,3 +1,8 @@
+<!-- 
+Utiliser pour encapsuler une activité 
+Incluant la fonction complétion
+-->
+
 <template>
     <div class="card activity-card">
         <div class="card-header">
@@ -33,7 +38,7 @@
 </template>
 
 <script>
-import BadgeIcon from '@/components/BadgeIcon.vue'
+import BadgeIcon from '@/components/signage-collection/BadgeIcon.vue'
 
 export default {
     components: {
@@ -100,5 +105,17 @@ export default {
 }
 .card-body + .carousel {
     padding: 0;
+}
+.card-body .card-header {
+    padding: 0.25rem
+}
+.card-body {
+    padding: 0
+}
+.tabs {
+    margin-top: 0;
+}
+.tab-content {
+    padding: 1.25rem;
 }
 </style>

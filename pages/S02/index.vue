@@ -128,13 +128,13 @@ export default {
 
 <script>
 
-import BadgeIcon from '@/components/BadgeIcon.vue'
-import MiniNavCard from '@/components/MiniNavCard.vue'
-import NavigationCard from '@/components/NavigationCard.vue'
-import edObjective from '@/components/edObjective.vue'
-import edEssential from '@/components/edEssential.vue'
-import edIntroduction from '@/components/edIntroduction.vue'
-import edActivity from '@/components/edActivity.vue'
+import BadgeIcon from '@/components/signage-collection/BadgeIcon.vue'
+import MiniNavCard from '@/components/navigation-collection/MiniNavCard.vue'
+import NavigationCard from '@/components/navigation-collection/NavigationCard.vue'
+import edObjective from '@/components/instructional-collection/edObjective.vue'
+import edEssential from '@/components/instructional-collection/edEssential.vue'
+import edIntroduction from '@/components/instructional-collection/edIntroduction.vue'
+import edActivity from '@/components/instructional-collection/edActivity.vue'
 
 export default {
   components: {

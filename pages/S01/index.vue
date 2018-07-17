@@ -3,9 +3,12 @@
     <!--<b-img class="" style="height: 240px" src="https://farm6.staticflickr.com/5564/30027314480_81db2b8384_b.jpg" fluid-grow alt="Responsive image" />-->
     <b-jumbotron 
       bg-variant="https://farm6.staticflickr.com/5564/30027314480_81db2b8384_b.jpg" 
-      header="Initiation" 
-      lead="Chapitre 1" 
+      header="Le développement moral" 
+      lead="Cours 1" 
       text-variant="white">
+      <p>
+        Une perspective développementale
+      </p>
     </b-jumbotron>
     <!--<div class="jumbotron" style="">
       <h1 class="display-4">HST2125</h1>
@@ -20,9 +23,6 @@
             <Step step-title="2" class="secondary" stepStatus="visonnée" slot="step"/>
             <Step step-title="3"  slot="step"/>
             <Step step-title="4"  slot="step"/>
-            <Step step-title="5"  slot="step"/>
-            <Step step-title="6"  slot="step"/>
-            <Step step-title="7"  slot="step"/>
         </Steps>
       <div class="columns">
         <div class="column">
@@ -42,11 +42,7 @@
                       <i class="material-icons">bullseye</i>
                     </h4>
                     <ul slot="content">
-                      <li>Comprendre l’organisation du cours</li>
-                      <li>Faire connaissance des membres du groupe.</li>
-                      <li>S’initier au cadre chronologique et spatio-temporel du cours.</li>
-                      <li>S’initier aux grandes thématiques du cours</li>
-                      <li>S’initier à la typologie et la méthodologie d’analyse des sources du haut Moyen Âge.</li>
+                      <li>À compléter</li>
                     </ul>
                   </edObjective>
                   
@@ -55,9 +51,7 @@
                 <b-tab title="Contenus essentiels" icon="flag-variant">
                   <edEssential>
                     <ul slot="content">
-                        <li>Le haut Moyen Âge comme époque</li>
-                        <li>Les grandes thématique de l’époque du haut Moyen Âge</li>
-                        <li>Les bases méthodologiques: la recherche et les sources</li>
+                        <li>À compléter</li>
                       </ul>
                   </edEssential>
                 </b-tab>
@@ -66,12 +60,10 @@
                   <edIntroduction>
                     <div slot="content">
                     <p>
-                      Au-delà de vous souhaiter la bienvenue et de faire votre connaissance, les objectifs de la première semaine sont triples:
+                      À compléter
                     </p>
                     <ol>
-                        <li>Comprendre l’organisation du cours: contenu, structures des modules, éléments d’évaluation, philosophie de travail du groupe</li>
-                        <li>Prendre connaissance des modes d’approche de deux éléments de base du travail scientifique en histoire: la littérature de recherche et les sources historiques</li>
-                        <li>S’initier au cadre chronologique et spatio-temporel ainsi qu’aux focalisations thématiques du cours</li>
+                        <li>À compléter</li>
                     </ol>
                   </div>
                   </edIntroduction>
@@ -81,30 +73,19 @@
                   <edActivity>
                     <div slot="content">
                       <b-card-group deck>
-                      <NavigationCard title="Activité 1" icon="record_voice_over" colorType="white" activityLink="/S01-Activity/S01-A01/">
-                        <h4 slot="actTitle">Atelier d'initiation</h4>
+                      <NavigationCard title="Thème 1.1" icon="record_voice_over" colorType="white" activityLink="S01-Activity/S01-A01/">
+                        <h4 slot="actTitle">Stade de jugement de Kohlberg</h4>
                       </NavigationCard>
-                      <NavigationCard icon="forum" title="Activité 2" colorType="white" imgSrc="" activityLink="S01-Activity/S01-A02">
-                        <h4 slot="actTitle">Se présenter dans le forum Présentations</h4>
+                      <NavigationCard icon="forum" title="Thème 1.2" colorType="white" imgSrc="" activityLink="S01-Activity/S01-A02">
+                        <h4 slot="actTitle">Mode de régulation des comportements</h4>
                       </NavigationCard>
-                      <NavigationCard icon="remove_red_eye" title="Activité 3" colorType="white" activityLink="S01-Activity/S01-A03">
-                        <h4 slot="actTitle">Se familiariser avec l'organisation du cours et formuler les attentes</h4>
+                      <NavigationCard icon="remove_red_eye" title="Thème 1.3" colorType="white" activityLink="S01-Activity/S01-A03">
+                        <h4 slot="actTitle">Impact du groupe et de l’organisation dans l'éthique</h4>
                       </NavigationCard>
-                      <NavigationCard icon="remove_red_eye"  textColor="dark" title="Activité 4" colorType="white" activityLink="S01-Activity/S01-A04">
-                        <h4 slot="actTitle">Prendre connaissance des principes de fiche de lecture</h4>
+                      <NavigationCard icon="remove_red_eye"  textColor="dark" title="Thème 1.4" colorType="white" activityLink="S01-Activity/S01-A04">
+                        <h4 slot="actTitle">Appliquer une décision éthique</h4>
                       </NavigationCard>
                     </b-card-group>
-                    <b-card-group deck>
-                      <NavigationCard icon="book" title="Activité 5" colorType="white" textColor="dark" activityLink="S01-Activity/S01-A05">
-                        <h4 slot="actTitle">S'initier aux dimensions spatio-temporels à l'aide du module "Initiation au haut Moyen Âge" avec fiche de lecture 1</h4>
-                      </NavigationCard>
-                      <NavigationCard icon="remove_red_eye" title="Activité 6" colorType="white" textColor="dark">
-                        <h4 slot="actTitle">Se familiariser avec la typologie des sources du haut Moyen Âge 1</h4>
-                      </NavigationCard>
-                      <NavigationCard icon="record_voice_over" title="Activité 7" colorType="white" textColor="dark">
-                        <h4 slot="actTitle">Atelier d'approfondissement</h4>
-                      </NavigationCard>
-                  </b-card-group>
                     </div>
                   </edActivity>
                 </b-tab>
@@ -114,6 +95,7 @@
         </div>
       </div>
     </div>
+    
   </div>
 </template>
 
@@ -133,14 +115,14 @@ export default {
 
 <script>
 
-import BadgeIcon from '@/components/BadgeIcon.vue'
-import Steps from '@/components/Steps.vue'
-import Step from '@/components/Step.vue'
-import NavigationCard from '@/components/NavigationCard.vue'
-import edObjective from '@/components/edObjective.vue'
-import edEssential from '@/components/edEssential.vue'
-import edIntroduction from '@/components/edIntroduction.vue'
-import edActivity from '@/components/edActivity.vue'
+import BadgeIcon from '@/components/signage-collection/BadgeIcon.vue'
+import Steps from '@/components/navigation-collection/Steps.vue'
+import Step from '@/components/navigation-collection/Step.vue'
+import NavigationCard from '@/components/navigation-collection/NavigationCard.vue'
+import edObjective from '@/components/instructional-collection/edObjective.vue'
+import edEssential from '@/components/instructional-collection/edEssential.vue'
+import edIntroduction from '@/components/instructional-collection/edIntroduction.vue'
+import edActivity from '@/components/instructional-collection/edActivity.vue'
 
 export default {
   layout: 'default',

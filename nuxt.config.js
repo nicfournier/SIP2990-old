@@ -3,7 +3,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'hst2125-bv',
+    title: 'sip2990-bv',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -30,14 +30,13 @@ module.exports = {
   build: {
 
    // activer pour generate
-    publicPath: '_nuxt/',
+    //publicPath: '_nuxt/',
   
     extend(config, ctx) {
     }
   },
   mode: 'universal',
   router: {
-
 
    // activer pour generate
     //base: '/pluginfile.php/3813557/mod_resource/content/5/hst2125-bv/',

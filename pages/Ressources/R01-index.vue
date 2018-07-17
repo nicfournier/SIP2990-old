@@ -62,7 +62,7 @@
 </template>
 
 <script>
-import Modal from '@/components/Modal.vue'
+import Modal from '@/components/layout-collection/Modal.vue'
 
 export default {
     layout: 'default',

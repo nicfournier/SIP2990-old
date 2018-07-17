@@ -22,8 +22,8 @@
                         </b-tab>
                         <b-tab title="Ressources">
                             <ActivityCard title="lecture" colorType="success">
-                                <MappaMundiFleury image="https://pbs.twimg.com/media/DMaTIsiWkAEekTs.jpg" reference="p. 2-6" author=""></MappaMundiFleury>
-                                <MappaMundiFleury image="https://pbs.twimg.com/media/DMaTIsiWkAEekTs.jpg" reference="p. 8-10" author=""></MappaMundiFleury>
+                                <!--<MappaMundiFleury image="https://pbs.twimg.com/media/DMaTIsiWkAEekTs.jpg" reference="p. 2-6" author=""></MappaMundiFleury>
+                                <MappaMundiFleury image="https://pbs.twimg.com/media/DMaTIsiWkAEekTs.jpg" reference="p. 8-10" author=""></MappaMundiFleury>-->
                             </ActivityCard>
                         </b-tab>
                     </b-tabs>
@@ -57,15 +57,13 @@
 </template>
 
 <script>
-import Modal from '@/components/Modal.vue'
-import MappaMundiFleury from '@/components/course/MappaMundiFleury.vue'
-import ActivityCard from '@/components/ActivityCard.vue'
+import Modal from '@/components/layout-collection/Modal.vue'
+import ActivityCard from '@/components/instructional-collection//ActivityCard.vue'
 
 export default {
     layout: 'activity',
     components: {
         Modal,
-        MappaMundiFleury,
         ActivityCard
         }
 }

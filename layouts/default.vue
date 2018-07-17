@@ -9,13 +9,14 @@
 </template>
 
 <script>
-import TopNavbar from '~/components/TopNavbar.vue'
+import TopNavbar from '@/components/course-specific/TopNavbar.vue'
+
 
 import Vue from 'vue'
 import BootstrapVue from 'bootstrap-vue'
-import ProgressBar from '~/components/ProgressBar.vue'
-import Breadcrumbs from '~/components/Breadcrumbs.vue'
-import Footer from '~/components/Footer.vue'
+import ProgressBar from '@/components/signage-collection/ProgressBar.vue'
+import Breadcrumbs from '@/components/navigation-collection/Breadcrumbs.vue'
+import Footer from '@/components/layout-collection/Footer.vue'
 
 //import StepNavigation from '~/components/StepNavigation.vue'
 

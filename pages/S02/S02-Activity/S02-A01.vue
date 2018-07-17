@@ -52,8 +52,8 @@
 </template>
 
 <script>
-import edInstruction from '@/components/edInstruction.vue'
-import edResource from '@/components/edResource.vue'
+import edInstruction from '@/components/instructional-collection//edInstruction.vue'
+import edResource from '@/components/instructional-collection//edResource.vue'
 
 export default {
     layout: 'activity',

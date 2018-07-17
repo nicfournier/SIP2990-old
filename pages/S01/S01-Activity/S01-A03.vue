@@ -7,19 +7,34 @@
             text-variant="white">
         </b-jumbotron>
         <b-container class="">
-                    <h4 class="alert-heading">Activité 3</h4>
+            <h3>
+                 Impact du groupe et de l’organisation dans l'éthique.
+            </h3>
+            <h4 class="alert-heading">Thème 1.3</h4>
                     <hr>
                     <p> 
+                    <!--<SayHola />-->
                     </p>
                     <b-tabs>
-                        <b-tab title="Consignes" active>
-                            <p>Prenez le temps de parcourir le plan, les modules et les ressources du cours en vue surtout de formuler des questions à poser lors de l’atelier d’information.</p>
-                            
+                        <b-tab title="Objectifs spécifiques" active>
+                            <p>Connaitre les impacts du contexte organisationnel dans le niveau d’éthique de ces membres.</p>
                         </b-tab>
-                        <b-tab title="Activité">
-                            <b-card-group deck>
-                                <ActivityCard  title="forum" colorType="success" icon="forum">
-                                    <b-button v-b-modal.modal1 href="#">Ressources du cours</b-button> ou vous pouvez y accéder à partir du menu "Ressources".
+                        <b-tab title="Activités">
+                            <b-card-group >
+                                <ActivityCard  title="à déterminé" colorType="success" icon="forum">
+                                    <b-tabs small pills card >
+                                        <b-tab title="Objectifs" active>
+                                            à déterminé!
+                                        </b-tab>
+                                        <b-tab title="Consignes" >
+                                            <ul>
+                                                <li>Faites l'activité... à déterminé!</li>
+                                            </ul>
+                                        </b-tab>
+                                        <b-tab title="Activité" >
+                                            à déterminé!
+                                        </b-tab>
+                                    </b-tabs>
                                 </ActivityCard>
                             </b-card-group>
                         </b-tab>
@@ -41,14 +56,19 @@
 </template>
 
 <script>
-import Modal from '@/components/Modal.vue'
-import ActivityCard from '@/components/ActivityCard.vue'
+import Modal from '@/components/layout-collection/Modal.vue'
+import ActivityCard from '@/components/instructional-collection/ActivityCard.vue'
+//import SayHola from 'libfas'
+//import VueClock from '@/node_modules/vue-clock/vue-clock.vue';
 
 export default {
     layout: 'activity',
     components: {
         Modal,
-        ActivityCard
+        ActivityCard//,
+        //SayHola
+        //VueClock
+
         },
         data () {
         return {

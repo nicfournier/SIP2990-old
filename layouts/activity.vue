@@ -29,7 +29,7 @@
 
 
     <nuxt/>
-    <Footer/>
+    <!--<Footer/>-->
   </div>
 </template>
 
@@ -38,7 +38,7 @@
 
 import Vue from 'vue'
 import BootstrapVue from 'bootstrap-vue'
-import Footer from '@/components/Footer.vue'
+import Footer from '@/components/layout-collection/Footer.vue'
 
 Vue.use(BootstrapVue);
 

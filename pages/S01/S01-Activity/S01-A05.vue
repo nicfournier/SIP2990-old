@@ -114,9 +114,9 @@
 </template>
 
 <script>
-import Modal from '@/components/Modal.vue'
-import ActivityCard from '@/components/ActivityCard.vue'
-import BookCard from '@/components/BookCard.vue'
+import Modal from '@/components/layout-collection/Modal.vue'
+import ActivityCard from '@/components/instructional-collection/ActivityCard.vue'
+import BookCard from '@/components/instructional-collection/BookCard.vue'
 
 export default {
     layout: 'activity',
