@@ -6,6 +6,7 @@
         SIP2990 - Éthique appliquée en sécurité intérieure
       </template>
       <p></p>
+      <Tiles/>
       <b-row>
         <b-col>
           <b-btn variant="primary" to="S01/">Semaine 01</b-btn>

@@ -15,14 +15,13 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "@bit/santiagok986.dishola.src.dis-bonjour": "^1.0.1",
     "ajv": "^6.5.0",
-    "bootstrap-vue": "^2.0.0-rc.9",
+    "bootstrap-vue": "^2.0.0-rc.11",
     "camelcase": "^5.0.0",
     "jquery": "^3.3.1",
     "my-vue-lib-fel": "^1.0.0",
     "node-sass": "^4.9.0",
-    "nuxt": "^1.0.0",
+    "nuxt": "^1.4.1",
     "sass-loader": "^7.0.1"
   },
   "devDependencies": {
@@ -32,7 +31,16 @@
     "eslint-loader": "^1.7.1",
     "eslint-plugin-vue": "^4.5.0",
     "libfas": "^1.1.3",
-    "vue-clock-simple": "^1.0.4",
     "webpack": "^3.11.0"
-  }
+  },
+  "main": ".eslintrc.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicfournier/SIP2990.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicfournier/SIP2990/issues"
+  },
+  "homepage": "https://github.com/nicfournier/SIP2990#readme"
 }
