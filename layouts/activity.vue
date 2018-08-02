@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="position: relative;">
     <b-navbar type="light" variant="light" toggleable sticky>
       <b-navbar-toggle target="nav_dropdown_collapse"></b-navbar-toggle>
       <b-collapse is-nav id="nav_dropdown_collapse">

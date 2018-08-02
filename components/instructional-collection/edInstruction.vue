@@ -11,13 +11,13 @@ export default {
     components: {
         },
     props: {
-        content:{
-            type:String,
-            default:''
-        },
         header:{
             type:String,
             default:'S01-A01'
+        },
+        content:{
+            type:String,
+            default:''
         }
     }
 }

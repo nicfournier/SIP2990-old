@@ -1,6 +1,25 @@
 <template>
   <div class="apercu">
     <!--<b-img class="" style="height: 240px" src="https://farm6.staticflickr.com/5564/30027314480_81db2b8384_b.jpg" fluid-grow alt="Responsive image" />-->
+    
+    <section class="container">
+    <div class="video-player-box"
+         :playsinline="playsinline"
+         @play="onPlayerPlay($event)"
+         @pause="onPlayerPause($event)"
+         @ended="onPlayerEnded($event)"
+         @loadeddata="onPlayerLoadeddata($event)"
+         @waiting="onPlayerWaiting($event)"
+         @playing="onPlayerPlaying($event)"
+         @timeupdate="onPlayerTimeupdate($event)"
+         @canplay="onPlayerCanplay($event)"
+         @canplaythrough="onPlayerCanplaythrough($event)"
+         @ready="playerReadied"
+         @statechanged="playerStateChanged($event)"
+         v-video-player:myVideoPlayer="playerOptions">
+    </div>
+  </section>
+
     <b-jumbotron 
       bg-variant="https://farm6.staticflickr.com/5564/30027314480_81db2b8384_b.jpg" 
       header="Le développement moral" 
@@ -73,16 +92,16 @@
                   <edActivity>
                     <div slot="content">
                       <b-card-group deck>
-                      <NavigationCard title="Thème 1.1" icon="record_voice_over" colorType="white" activityLink="S01-Activity/S01-A01/">
+                      <NavigationCard title="Thème 1.1" imgSrc="https://farm6.staticflickr.com/5564/30027314480_81db2b8384_b.jpg" icon="record_voice_over" colorType="transparent" activityLink="S01-Activity/S01-A01/">
                         <h4 slot="actTitle">Stade de jugement de Kohlberg</h4>
                       </NavigationCard>
-                      <NavigationCard icon="forum" title="Thème 1.2" colorType="white" imgSrc="" activityLink="S01-Activity/S01-A02">
+                      <NavigationCard icon="forum" title="Thème 1.2" activityLink="S01-Activity/S01-A02">
                         <h4 slot="actTitle">Mode de régulation des comportements</h4>
                       </NavigationCard>
-                      <NavigationCard icon="remove_red_eye" title="Thème 1.3" colorType="white" activityLink="S01-Activity/S01-A03">
+                      <NavigationCard icon="remove_red_eye" title="Thème 1.3" colorType="primary" textColor="outline-success" activityLink="S01-Activity/S01-A03">
                         <h4 slot="actTitle">Impact du groupe et de l’organisation dans l'éthique</h4>
                       </NavigationCard>
-                      <NavigationCard icon="remove_red_eye"  textColor="dark" title="Thème 1.4" colorType="white" activityLink="S01-Activity/S01-A04">
+                      <NavigationCard icon="remove_red_eye" title="Thème 1.4" colorType="dark" textColor="light" activityLink="S01-Activity/S01-A04">
                         <h4 slot="actTitle">Appliquer une décision éthique</h4>
                       </NavigationCard>
                     </b-card-group>
@@ -137,18 +156,82 @@ export default {
     edActivity
   },
   data () {
-    return {
-      msg: 'semaine 1',
+      return {
+msg: 'semaine 1',
+
+        // component options
+        playsinline: true,
+        
+        // videojs options
+        playerOptions: {
+          muted: true,
+          language: 'en',
+          playbackRates: [0.7, 1.0, 1.5, 2.0],
+          sources: [{
+            type: "video/mp4",
+            src: "https://player.vimeo.com/external/114603532.hd.mp4?s=d3249edd0fe87e9fc50231e0e994fbc1ab3d4665&profile_id=119"
+          }],
+          // poster: "/static/images/author.jpg",
+        }
+      }
+    },
+    mounted() {
+      console.log('this is current player instance object', this.myVideoPlayer)
+    },
+    methods: {
+      // listen event
+      onPlayerPlay(player) {
+        // console.log('player play!', player)
+      },
+      onPlayerPause(player) {
+        // console.log('player pause!', player)
+      },
+      onPlayerEnded(player) {
+        // console.log('player ended!', player)
+      },
+      onPlayerLoadeddata(player) {
+        // console.log('player Loadeddata!', player)
+      },
+      onPlayerWaiting(player) {
+        // console.log('player Waiting!', player)
+      },
+      onPlayerPlaying(player) {
+        // console.log('player Playing!', player)
+      },
+      onPlayerTimeupdate(player) {
+        // console.log('player Timeupdate!', player.currentTime())
+      },
+      onPlayerCanplay(player) {
+        // console.log('player Canplay!', player)
+      },
+      onPlayerCanplaythrough(player) {
+        // console.log('player Canplaythrough!', player)
+      },
+      // or listen state event
+      playerStateChanged(playerCurrentState) {
+        console.log('player current update state', playerCurrentState)
+      },
+      // player is ready
+      playerReadied(player) {
+        console.log('example 01: the player is readied', player)
+      }
     }
-  }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="scss" scoped>
 .jumbotron {
   background: url(https://farm6.staticflickr.com/5564/30027314480_81db2b8384_b.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
+.container {
+    width: 60%;
+    margin: 0 auto;
+    padding: 50px 0;
+    .video-player-box {
+      min-height: 200px;
+    }
+  }
 </style>

@@ -4,8 +4,10 @@ colorType=""
 -->
 <template>
     <div 
+        
         v-bind:class="['card', 'mb-3', 'text-' + textColor, 'bg-' + colorType]"
-        v-bind:style="{ backgroundImage: 'url(' + imgSrc + ')', borderWidth: '1px', borderColor: textColor }"> <!-- 'border-primary ' + -->
+        v-bind:style="{ backgroundImage: 'url(' + imgSrc + ')', borderWidth: '1px', borderColor: textColor,  backgroundSize: 'cover'}"> <!-- 'border-primary ' + -->
+        
         <div v-bind:class="['card-header', 'bg-' + colorType]">
             <BadgeIcon
                 class="justify-content-end"  
@@ -15,18 +17,23 @@ colorType=""
                 >
             </BadgeIcon>
         </div>
-        <div class="card-body">
-            <div class="card-title">
-                <slot name="actTitle"></slot>
-                <!--{{ actTitle }}-->
+        <!--<b-button v-bind:to="activityLink" v-bind:class="['card-body' + ' ' + 'btn-' + textColor]" >-->
+        <b-button v-bind:to="activityLink" :variant="textColor" v-bind:class="['card-body ' + 'bg-' + colorType]">
+            <div class="card-body">
+                <div class="card-title">
+                    <slot name="actTitle"></slot>
+                    <!--{{ actTitle }}-->
+                </div>
+                <div class="card-text">
+                    <slot name="content"></slot>
+                </div>
             </div>
-            <div class="card-text">
-                <slot name="content"></slot>
-            </div>
-        </div>
+        </b-button>
         <div v-bind:class="['card-footer ' + 'bg-' + colorType]" >
             <!--<b-link href="" class="card-link">Accéder </b-link>-->
-            <b-button  size="sm"  v-bind:to="activityLink" v-bind:class="['btn-' + 'outline-' + textColor]">{{ linkTerm }}</b-button>
+            <b-button  size="sm"  v-bind:to="activityLink" :variant="textColor">{{ linkTerm }}</b-button>
+            <!--<b-button  size="sm"  v-bind:to="activityLink" v-bind:class="['btn-' + textColor]">{{ linkTerm }}</b-button>-->
+            <!--<b-button  size="sm"  v-bind:to="activityLink" v-bind:class="['btn-' + 'outline-' + textColor]">{{ linkTerm }}</b-button>-->
         </div>
     </div> 
 </template>
@@ -105,6 +112,14 @@ export default {
 <style lang="scss" scoped>
 @import '@/assets/custom-scss.scss';
 
+.card-body.btn {
+    font-size: inherit;
+    padding: inherit;
+    border: 0;
+    border-radius: 0;
+    white-space: inherit;
+
+}
 .btn-outline-white, .btn-outline-white{
     border-color: $white;
 }
