@@ -16,7 +16,6 @@
         </b-col>
     </b-row>
     </b-jumbotron>
-<Tyles />
   </div>
 </template>
 
@@ -26,7 +25,6 @@
 
 import Vue from 'vue'
 import BootstrapVue from 'bootstrap-vue'
-window.x = require('my-vue-lib-fel');
 
 /*import BadgeIcon from '@/components/signage-collection/BadgeIcon.vue'
 import Steps from '@/components/navigation-collection/Steps.vue'
