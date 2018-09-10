@@ -131,7 +131,7 @@ export default {
 import BadgeIcon from '@/components/signage-collection/BadgeIcon.vue'
 import MiniNavCard from '@/components/navigation-collection/MiniNavCard.vue'
 import NavigationCard from '@/components/navigation-collection/NavigationCard.vue'
-import edObjective from '@/components/instructional-collection/edObjective.vue'
+//import edObjective from '@/components/instructional-collection/edObjective.vue'
 import edEssential from '@/components/instructional-collection/edEssential.vue'
 import edIntroduction from '@/components/instructional-collection/edIntroduction.vue'
 import edActivity from '@/components/instructional-collection/edActivity.vue'
@@ -141,7 +141,7 @@ export default {
     BadgeIcon,
     MiniNavCard,
     NavigationCard,
-    edObjective,
+    //edObjective,
     edEssential,
     edIntroduction,
     edActivity

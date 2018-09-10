@@ -16,6 +16,7 @@
         </b-nav>-->
         <nav id="navbar-example2" class="navbar navbar-light bg-light">
             <ul class="nav nav-pills">
+                <li class="navlink">navigation de la page</li>
                 <li class="nav-item">
                 <a class="nav-link" href="#block01">block01</a>
                 </li>
@@ -71,7 +72,11 @@
         </b-container >
         <b-container id="block02">
             <h3>Positionnement de l’éthique</h3>
-            <p>Explorez ces droites sous différents aspects. En cliquant les modes de régulations</p>
+            <p>Explorez ces droites sous différents aspects. <br />
+                <i class="material-icons">
+                info
+            </i>
+            En cliquant les modes de régulations</p>
             <b-tabs>
                 <b-tab title="Principes de base" active>
                     <b-row>
@@ -611,8 +616,14 @@ body {
 .badge {
     white-space: inherit;
 }
+.jumbotron.splash {
+    margin-bottom: 0
+}
+#navbar-example2 {
+
+}
 svg {
-  
+  display: none
 }
 /*.svg-filters {
   height: 0;
@@ -635,5 +646,8 @@ svg {
   height: 82px;*/
   background: url(~assets/pole.svg) no-repeat top center;
   background-size: cover;
+}
+.container {
+    margin-top: 80px;
 }
 </style>

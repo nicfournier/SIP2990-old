@@ -6,7 +6,7 @@
         SIP2990 - Éthique appliquée en sécurité intérieure
       </template>
       <p></p>
-      <!--<Tiles/>-->
+      <Tiles/>
       <!--<SayHola/>-->
       <b-row>
         <b-col>
@@ -17,8 +17,10 @@
         </b-col>
     </b-row>
     </b-jumbotron>
-    <vimeo-player ref="player" :video-id="179089952" @ready="onReady" :player-height="height" :options="options"/>
-    <vimeo-player ref="player" :video-id="114603532" @ready="onReady" :player-height="height" :options="options"/>
+    <!--<vimeo-player ref="player" :video-id="179089952" @ready="onReady" :player-height="height" :options="options"/>
+    <vimeo-player ref="player" :video-id="114603532" @ready="onReady" :player-height="height" :options="options"/>-->
+
+
   </div>
 </template>
 
@@ -29,12 +31,12 @@
 import Vue from 'vue'
 import BootstrapVue from 'bootstrap-vue'
 import Animate from 'animate.css'
-import vueVimeoPlayer from 'vue-vimeo-player'
+//import vueVimeoPlayer from 'vue-vimeo-player'
 
-import VueVideoPlayer from 'vue-video-player'
+//import VueVideoPlayer from 'vue-video-player'
  
 // require videojs style
-import 'video.js/dist/video-js.css'
+//import 'video.js/dist/video-js.css'
 
 
 /*import BadgeIcon from '@/components/signage-collection/BadgeIcon.vue'
@@ -47,34 +49,16 @@ import edIntroduction from '@/components/instructional-collection/edIntroduction
 import edActivity from '@/components/instructional-collection/edActivity.vue'*/
 
 
-Vue.use(BootstrapVue, vueVimeoPlayer, VueVideoPlayer);
+Vue.use(BootstrapVue); //, vueVimeoPlayer, VueVideoPlayer
+
 
 export default {
   layout: 'splash',
   components: {
     //home
-    vueVimeoPlayer
-  },
-  data() {
-		return {
-      //autoplay: true,
-			//videoID: '114603532',
-			height: 500,
-			options: {color: '2680C2', speed: true},
-      playerReady: false
-		}
-	},
-	methods: {
-		onReady() {
-			this.playerReady = true
-		},
-		play () {
-			this.$refs.player.play()
-		},
-		stop () {
-			this.$refs.player.stop()
-		}
-	}
+    //vueVimeoPlayer//,
+    //videoPlayer
+  }
 }
 </script>
 

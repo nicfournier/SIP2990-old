@@ -19,26 +19,32 @@ module.exports = {
   */
   loading: { color: '#3B8070' },
 
+  plugins: [
+    { src: '@/plugins/element-ui', ssr: false},
+    { src: '~/plugins/collection'},
+    { src: '@/plugins/fas-collection', ssr: false}
+    //{ src: '~plugins/vimeo-player', ssr: false },
+    //{ src: '~plugins/nuxt-video-player-plugin.js', ssr: false },
+    //{ src: '~/plugins/vue-plyr.js', ssr: false }
+  ],
+
   css: [
     // Load a Node.js module directly (here it's a Sass file)
     'bootstrap-vue',
     // CSS file in the project
-    '@/assets/custom-scss.scss',
-    'video.js/dist/video-js.css'
+    '@/assets/custom-scss.scss'//,
+    //'video.js/dist/video-js.css'
   ],
-  plugins: [
-    //{ src: '@/plugins/element-ui', ssr: false},
-    { src: '~plugins/vimeo-player', ssr: false },
-    { src: '~plugins/nuxt-video-player-plugin.js', ssr: false }
-  ],
+
   //routerBase,
   //srcDir: 'parcours/',
   build: {
 
    // activer pour generate
     //publicPath: '_nuxt/',
-    //vendor: ['my-vue-lib-fel'],
-    vendor: ['vue-vimeo-player'],
+    vendor: ['my-vue-lib-fel'],
+    //vendor: [],
+    //vendor: ['vue-vimeo-player'],
     extend(config, ctx) {
     }
   },

@@ -1,23 +1,34 @@
 <template>
   <div class="apercu">
     <!--<b-img class="" style="height: 240px" src="https://farm6.staticflickr.com/5564/30027314480_81db2b8384_b.jpg" fluid-grow alt="Responsive image" />-->
-    
+    <!--<EdTask>
+      <h3 slot="header">Head EdTask</h3>
+    </EdTask>
+    <EdResource>
+      <h3 slot="header">Head EdResource</h3>
+    </EdResource>-->
     <section class="container">
-    <div class="video-player-box"
-         :playsinline="playsinline"
-         @play="onPlayerPlay($event)"
-         @pause="onPlayerPause($event)"
-         @ended="onPlayerEnded($event)"
-         @loadeddata="onPlayerLoadeddata($event)"
-         @waiting="onPlayerWaiting($event)"
-         @playing="onPlayerPlaying($event)"
-         @timeupdate="onPlayerTimeupdate($event)"
-         @canplay="onPlayerCanplay($event)"
-         @canplaythrough="onPlayerCanplaythrough($event)"
-         @ready="playerReadied"
-         @statechanged="playerStateChanged($event)"
-         v-video-player:myVideoPlayer="playerOptions">
-    </div>
+      <b-row>
+        <b-col>
+          <!--<div class="video-player-box"
+              :playsinline="playsinline"
+              @play="onPlayerPlay($event)"
+              @pause="onPlayerPause($event)"
+              @ended="onPlayerEnded($event)"
+              @loadeddata="onPlayerLoadeddata($event)"
+              @waiting="onPlayerWaiting($event)"
+              @playing="onPlayerPlaying($event)"
+              @timeupdate="onPlayerTimeupdate($event)"
+              @canplay="onPlayerCanplay($event)"
+              @canplaythrough="onPlayerCanplaythrough($event)"
+              @ready="playerReadied"
+              @statechanged="playerStateChanged($event)"
+              v-video-player:myVideoPlayer="playerOptions">
+          </div>-->
+          <!--<vuePlyr /> -->
+        </b-col>
+        <b-col></b-col>
+      </b-row>
   </section>
 
     <b-jumbotron 
@@ -109,6 +120,8 @@
                   </edActivity>
                 </b-tab>
             </b-tabs>
+            <revealCard>
+            </revealCard>
         </section>
 
         </div>
@@ -134,86 +147,44 @@ export default {
 
 <script>
 
-import BadgeIcon from '@/components/signage-collection/BadgeIcon.vue'
-import Steps from '@/components/navigation-collection/Steps.vue'
-import Step from '@/components/navigation-collection/Step.vue'
-import NavigationCard from '@/components/navigation-collection/NavigationCard.vue'
-import edObjective from '@/components/instructional-collection/edObjective.vue'
-import edEssential from '@/components/instructional-collection/edEssential.vue'
-import edIntroduction from '@/components/instructional-collection/edIntroduction.vue'
-import edActivity from '@/components/instructional-collection/edActivity.vue'
+//import BadgeIcon from '@/components/signage-collection/BadgeIcon.vue'
+//import Steps from '@/components/navigation-collection/Steps.vue'
+//import Step from '@/components/navigation-collection/Step.vue'
+//import NavigationCard from '@/components/navigation-collection/NavigationCard.vue'
+//import edObjective from '@/components/instructional-collection/edObjective.vue'
+//import edEssential from '@/components/instructional-collection/edEssential.vue'
+//import edIntroduction from '@/components/instructional-collection/edIntroduction.vue'
+//import edActivity from '@/components/instructional-collection/edActivity.vue'
+//import revealCard from '@/components/instructional-collection/revealCard.vue'
+
+
+
+//import EdTask from '../../node_modules/fas-collection/src/components/EdTask.vue'
+//import EdResource from '../../node_modules/fas-collection/src/components/EdResource.vue'
+
+
+//import vuePlyr from '@/components/media-collection/plyrVideo.vue'
 
 export default {
   layout: 'default',
   components: {
-    BadgeIcon,
-    Steps,
-    Step,
-    NavigationCard,
-    edObjective,
-    edEssential,
-    edIntroduction,
-    edActivity
+    //BadgeIcon,
+    //Steps,
+    //Step,
+    //NavigationCard,
+    //edObjective,
+    //edEssential,
+    //edIntroduction//,
+    //edActivity//,
+    //revealCard
+
+    //EdResource,
+    //EdTask
+    //vuePlyr
   },
   data () {
       return {
-msg: 'semaine 1',
-
-        // component options
-        playsinline: true,
-        
-        // videojs options
-        playerOptions: {
-          muted: true,
-          language: 'en',
-          playbackRates: [0.7, 1.0, 1.5, 2.0],
-          sources: [{
-            type: "video/mp4",
-            src: "https://player.vimeo.com/external/114603532.hd.mp4?s=d3249edd0fe87e9fc50231e0e994fbc1ab3d4665&profile_id=119"
-          }],
-          // poster: "/static/images/author.jpg",
-        }
-      }
-    },
-    mounted() {
-      console.log('this is current player instance object', this.myVideoPlayer)
-    },
-    methods: {
-      // listen event
-      onPlayerPlay(player) {
-        // console.log('player play!', player)
-      },
-      onPlayerPause(player) {
-        // console.log('player pause!', player)
-      },
-      onPlayerEnded(player) {
-        // console.log('player ended!', player)
-      },
-      onPlayerLoadeddata(player) {
-        // console.log('player Loadeddata!', player)
-      },
-      onPlayerWaiting(player) {
-        // console.log('player Waiting!', player)
-      },
-      onPlayerPlaying(player) {
-        // console.log('player Playing!', player)
-      },
-      onPlayerTimeupdate(player) {
-        // console.log('player Timeupdate!', player.currentTime())
-      },
-      onPlayerCanplay(player) {
-        // console.log('player Canplay!', player)
-      },
-      onPlayerCanplaythrough(player) {
-        // console.log('player Canplaythrough!', player)
-      },
-      // or listen state event
-      playerStateChanged(playerCurrentState) {
-        console.log('player current update state', playerCurrentState)
-      },
-      // player is ready
-      playerReadied(player) {
-        console.log('example 01: the player is readied', player)
+        msg: 'semaine 1',
       }
     }
 }

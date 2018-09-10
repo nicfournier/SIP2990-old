@@ -61,25 +61,25 @@ export default {
         edInstruction,
         edResource
         },
-        data () {
-            return {
-            selected: null,
-            options: [
-                { value: null, text: 'Catégories de cartes' },
-                { value: 'a', text: 'Europe et cartes globales' },
-                { value: 'b', text: 'Empire romain tardif et le temps des migrations' },
-                { value: 'C', text: 'Byzance, les Juifs et le monde musulman' },
-                { value: 'd', text: 'Italie', disabled: true },
-                { value: {'e': '3PO'}, text: 'Péninsule Ibérique' },
-                { value: {'f': '3PO'}, text: 'Royaumes des Francs' },
-                { value: {'g': '3PO'}, text: 'Francie occidentale – Francie' },
-                { value: {'h': '3PO'}, text: 'Francie orientale – Germanie' },
-                { value: {'i': '3PO'}, text: 'Îles Britanniques' },
-                { value: {'j': '3PO'}, text: 'Scandinavie' },
-                { value: {'k': '3PO'}, text: 'Europe de l’Est' }
-            ]
-            }
+    data () {
+        return {
+        selected: null,
+        options: [
+            { value: null, text: 'Catégories de cartes' },
+            { value: 'a', text: 'Europe et cartes globales' },
+            { value: 'b', text: 'Empire romain tardif et le temps des migrations' },
+            { value: 'C', text: 'Byzance, les Juifs et le monde musulman' },
+            { value: 'd', text: 'Italie', disabled: true },
+            { value: {'e': '3PO'}, text: 'Péninsule Ibérique' },
+            { value: {'f': '3PO'}, text: 'Royaumes des Francs' },
+            { value: {'g': '3PO'}, text: 'Francie occidentale – Francie' },
+            { value: {'h': '3PO'}, text: 'Francie orientale – Germanie' },
+            { value: {'i': '3PO'}, text: 'Îles Britanniques' },
+            { value: {'j': '3PO'}, text: 'Scandinavie' },
+            { value: {'k': '3PO'}, text: 'Europe de l’Est' }
+        ]
         }
+    }
 }
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
